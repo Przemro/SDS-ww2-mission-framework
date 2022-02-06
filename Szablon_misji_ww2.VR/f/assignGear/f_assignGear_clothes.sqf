@@ -62,7 +62,10 @@ if (_typeOfUnit in _mg) then {
 
 // DM
 if (_typeOfUnit in _dm) then {
+	_helmet = _dmHelmet;
+	_uniform = _dmUniform;
 	_rig = _dmRig;
+	_glasses = _dmGlasses;
 };
 
 // GL
