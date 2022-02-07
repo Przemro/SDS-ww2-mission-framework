@@ -29,6 +29,15 @@ if (_typeOfUnit in _hq) then {
 	_rig = _hqRig;
 	_glasses = _hqGlasses;
 };
+
+// SL
+if (_typeOfUnit in _Sleader) then {
+	_helmet = _slHelmet;
+	_uniform = _slUniform;
+	_rig = _slRig;
+	_glasses = _slGlasses;
+};
+
 // TL
 if (_typeOfUnit in _leader) then {
 	_rig = _leaderRig;
@@ -87,6 +96,14 @@ if (_typeOfUnit in _JPilotR) then {
 	_uniform = _JPilotUniform;
 	_rig = _JPilotRig;
 	_glasses = _JPilotGlasses;
+};
+
+// Crew Commander
+if (_typeOfUnit in _crewC) then {
+	_helmet = _crewCHelmet;
+	_uniform = _crewCUniform;
+	_rig = _crewCRig;
+	_glasses = _crewCGlasses;
 };
 
 // Crew

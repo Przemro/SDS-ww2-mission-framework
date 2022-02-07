@@ -183,17 +183,21 @@ _satche_extra_big = "SatchelCharge_Remote_Mag";
 // Mortar Ammo and Static Gun Ammo
 
 // Basic ammo
-_mtrHE = "ACE_1Rnd_82mm_Mo_HE";
-_mtrSmoke = "ACE_1Rnd_82mm_Mo_Smoke";
-_mtrFlare = "ACE_1Rnd_82mm_Mo_Illum";
+_mtrHE = "LIB_1rnd_81mmHE_GRWR34";
+_mtrSmoke = "LIB_81mm_GRWR34_SmokeShell";
+_mtrFlare = "LIB_1Rnd_81mm_Mo_Illum";
+
+_mtrBarrel = "LIB_GrWr34_Barrel_g";
+_mtrTripod = "LIB_GrWr34_Tripod_g";
 
 // Adv ammo - not used
 _mtrHEg = "ACE_1Rnd_82mm_Mo_HE_Guided";
 _mtrHElg = "ACE_1Rnd_82mm_Mo_HE_LaserGuided";
 
-// .50 ammo
-_Hmag = "ace_csw_100Rnd_127x99_mag";
-_HmagRed = "ace_csw_100Rnd_127x99_mag_red";
+// HMG ammo
+_Hmag = "LIB_100Rnd_792x57";
+//_HmagRed = "ace_csw_100Rnd_127x99_mag_red";
+_MGTripod = "LIB_Laffete_Tripod";
 
 // SPG ammo
 _spgOG9 = "CUP_compats_OG9_M";
@@ -218,9 +222,7 @@ _hCam = "ItemcTabHCam";
 _armorPlate = "diw_armor_plates_main_plate";
 
 // Binoculars
-_lornetkaAM = "ACE_Vector";
-_lornetkaFTL = "Binocular";
-_lornetkaRTO = "Laserdesignator";
+_lornetka = "LIB_Binocular_GER";
 
 //Navigation & sniper stuff
 _cTAB = "ItemcTab";
@@ -440,9 +442,9 @@ _AR = "LIB_MG42";										// Light machinegun
 _ARmag = "LIB_50Rnd_792x57";
 _ARmag_tr = "LIB_50Rnd_792x57";
 
-_MMG = "MMG_02_black_F";											// Medium machinegun
-_MMGmag = "130Rnd_338_Mag";
-_MMGmag_tr = "ACE_130Rnd_338_Mag_green";
+_MMG = "LIB_MG42";											// Medium machinegun
+_MMGmag = "LIB_50Rnd_792x57";
+_MMGmag_tr = "LIB_50Rnd_792x57";
 
 _DMrifle = "LIB_K98ZF39";											// Marksman
 _DMriflemag = "LIB_5Rnd_792x57";
@@ -512,11 +514,11 @@ _baggmgag = "B_HMG_01_support_F";				// used by GMG assistant gunner
 
 // Basic uniform, helmet and glasses - random picked
 _baseUniform = ["U_LIB_GER_Recruit","U_LIB_GER_Schutze","U_LIB_GER_Soldier2","U_LIB_GER_Soldier3","U_LIB_GER_Soldier_camo2","U_LIB_GER_Soldier_camo3"];
-_baseHelmet = ["H_LIB_GER_Helmet", "H_LIB_GER_Helmet_net", "H_LIB_GER_Helmet_ns", "H_LIB_GER_Helmet_os","H_LIB_GER_Helmet_Glasses"];
+_baseHelmet = ["H_LIB_GER_Helmet", "H_LIB_GER_Helmet_net", "H_LIB_GER_Helmet_ns", "H_LIB_GER_Helmet_os","H_LIB_GER_HelmetCamo2","H_LIB_GER_HelmetCamo","H_LIB_GER_HelmetCamo4"];
 _baseGlasses = [];
 
 // Vests
-_leaderRig = ["V_LIB_GER_VestMP40","V_LIB_GER_VestUnterofficer"]; // vest for Team Leaders and Squad Leaders, shoud have GL/radio
+_leaderRig = ["V_LIB_GER_VestMP40"]; // vest for Team Leaders and Squad Leaders, shoud have GL/radio
 _lightRig = ["V_LIB_GER_VestG43"];	// vest given to heavy units - meaning they carry some heavy stuff on them
 _mediumRig = ["V_LIB_GER_VestKar98"];	// general used vest for most inf
 _mgRig = ["V_LIB_GER_VestMG"];	// vest given to MG	// vest given to marksman
@@ -525,7 +527,8 @@ _glRig = ["V_LIB_GER_VestKar98"];	// vest given to grenadier
 // Some definitions
 
 _hq = ["co"];
-_leader = ["ftl", "dc"];
+_Sleader = ["dc"];
+_leader = ["ftl"];
 _gl = ["gren"];
 _medR = ["m"];
 _engR = ["eng","engm"];
@@ -534,7 +537,8 @@ _mg =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
 _dm = ["dm"];
 _pilot = ["pp","pcc","pc"];
 _JPilotR = ["ps"];
-_crew = ["vc","vg","vd"];
+_crew = ["vg","vd"];
+_crewC = ["vc"];
 _diver = ["divc","divr","divs","divm"];
 _specOp = ["sftl","sfm","sfat","sfs"];
 _ghillie = ["sn","sp"];
@@ -544,6 +548,12 @@ _hqUniform = ["U_LIB_GER_Unterofficer_HBT"];
 _hqHelmet = ["H_LIB_GER_OfficerCap"];
 _hqRig = ["V_LIB_GER_OfficerVest"];
 _hqGlasses = [];
+
+// Officer
+_slUniform = ["U_LIB_GER_Unterofficer_HBT"];
+_slHelmet = ["H_LIB_GER_Helmet_Glasses"];
+_slRig = ["V_LIB_GER_VestUnterofficer"];
+_slGlasses = [];
 
 // Medic
 _medUniform = ["U_LIB_GER_Medic"];
@@ -574,6 +584,12 @@ _JPilotUniform = ["U_B_PilotCoveralls"];
 _JPilotHelmet = ["H_PilotHelmetFighter_B"];
 _JPilotRig = ["V_Rangemaster_belt"];
 _JPilotGlasses = [];
+
+// Crew Commander
+_crewCUniform = ["U_LIB_GER_Tank_crew_leutnant"];
+_crewCHelmet = ["H_LIB_GER_TankOfficerCap","H_LIB_GER_TankOfficerCap2"];
+_crewCRig = ["V_LIB_GER_FieldOfficer"];
+_crewCGlasses = [];
 
 // Crew
 _crewUniform = ["U_LIB_GER_Tank_crew_unterofficer"];

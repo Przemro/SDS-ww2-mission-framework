@@ -24,7 +24,7 @@ case "m":
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
 	//(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
 	//(unitBackpack _unit) addItemCargoGlobal [_Pulseoximeter, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
+	//(unitBackpack _unit) addItemCargoGlobal [_AED, 1];
 };
 
 // BACKPACK: DOCTOR
@@ -86,7 +86,7 @@ case "RTO":
 // BACKPACK: Vehicle Comander
 case "vc":
 {
-	_unit addBackpack _bagTLalt;
+	_unit addBackpack _bagTL;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag_tr,1];
@@ -194,13 +194,18 @@ case "mmgab":
 // LOADOUT: HEAVY MG GUNNER (HMGG)
 case "hmgg":
 {
-	_unit addBackpack _baghmgg;
+	_unit addBackpack _bagextralarge;
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addMagazineCargoGlobal [_Hmag,2];
 };
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER (HMGAG)
 case "hmgag":
 {
-	_unit addBackpack _baghmgag;
+	_unit addBackpack _bagextralarge;
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addMagazineCargoGlobal [_Hmag,2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag,2];	
 };
 
 // LOADOUT: HEAVY MG AMMO BEARER (HMGAB)
@@ -208,8 +213,8 @@ case "hmgab":
 {
 	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_HmagRed, 4];
-	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
+	(unitBackpack _unit) addItemCargoGlobal [_Hmag, 3];
+	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
 // BACKPACK: MAT GUNNER (MATG)
@@ -294,13 +299,19 @@ case "hatab":
 // BACKPACK: MORTAR GUNNER (MTRG)
 case "mtrg":
 {
-	_unit addBackpack _bagmtrg;
+	_unit addBackpack _bagextralarge;
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 6];
+	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
 // BACKPACK: MORTAR ASSISTANT GUNNER (MTRAG)
 case "mtrag":
 {
-	_unit addBackpack _bagmtrag;
+	_unit addBackpack _bagextralarge;
+	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 6];
+	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
 // BACKPACK: MORTAR AMMO BEARER (MTRAB)
@@ -309,7 +320,7 @@ case "mtrab":
 	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 6];
-	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
 // BACKPACK: MEDIUM SAM GUNNER (MSAMG)
@@ -484,7 +495,7 @@ case "uav":
 // BACKPACK: CREW CHIEFS & VEHICLE DRIVERS
 case "cc":
 {
-	_unit addBackpack _bagextralarge;
+	_unit addBackpack _bagTL;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addItemCargoGlobal [_toolkit, 1];
 	(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen, 4];
@@ -494,7 +505,7 @@ case "cc":
 // Plecak Pilota
 case "pp":
 {
-	_unit addBackpack _bagextralarge;
+	_unit addBackpack _bagTL;
 	(unitBackpack _unit) addMagazineCargoGlobal [_flaregreen, 4];
 };
 
