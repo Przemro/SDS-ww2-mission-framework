@@ -30,15 +30,12 @@ _groups = [
 ["GrpNATO_F","Friedrich"],
 ["GrpNATO_IFVF","FV"],
 
-["GrpNATO_MMG1","MMG"],
 ["GrpNATO_HMG1","HMG"],
 ["GrpNATO_MAT1","MAT"],
-["GrpNATO_HAT1","HAT"],
 ["GrpNATO_MTR1","MTR"],
-["GrpNATO_MSAM1","SAM"],
 ["GrpNATO_GMG1","GMG"],
 ["GrpNATO_MC","MC"],
-["GrpNATO_EOD","EOD"],
+["GrpNATO_EOD","Sappers"],
 
 ["GrpNATO_ST1","ST1"],
 
@@ -55,10 +52,10 @@ _groups = [
 ["GrpNATO_TNK2","Chimera 1-2"],
 ["GrpNATO_TNK3","Chimera 1-3"],
 
-["GrpNATO_TH1","Harpie 1-1"],
-["GrpNATO_TH2","Harpie 1-2"],
-["GrpNATO_TH3","Harpie 1-3"],
-["GrpNATO_TH4","Harpie 1-4"],
+["GrpNATO_TH1","Jager 1-1"],
+["GrpNATO_TH2","Jager 1-2"],
+["GrpNATO_TH3","Jager 1-3"],
+["GrpNATO_TH4","Jager 1-4"],
 
 ["GrpNATO_AH1","Phoenix"],
 
@@ -71,27 +68,18 @@ _groups = [
 ["GrpCSAT_DC","1Plt-HQ"],
 ["GrpCSAT_DC1","2Plt-HQ"],
 
-["GrpCSAT_ASL","Anna"],
-["GrpCSAT_A1","A1"],
-["GrpCSAT_A2","A2"],
+["GrpCSAT_A","Anna"],
 
-["GrpCSAT_BSL","Boris"],
-["GrpCSAT_B1","B1"],
-["GrpCSAT_B2","B2"],
+["GrpCSAT_B","Boris"],
 
-["GrpCSAT_CSL","Center"],
-["GrpCSAT_C1","C1"],
-["GrpCSAT_C2","C2"],
+["GrpCSAT_C","Center"],
 
-["GrpCSAT_DSL","DSL"],
 ["GrpCSAT_D","Dmitri"],
 ["GrpCSAT_IFVD","DV"],
 
-["GrpCSAT_ESL","ESL"],
 ["GrpCSAT_E","Elena"],
 ["GrpCSAT_IFVE","EV"],
 
-["GrpCSAT_FSL","FSL"],
 ["GrpCSAT_F","Fyodor"],
 ["GrpCSAT_IFVF","FV"],
 
@@ -103,12 +91,12 @@ _groups = [
 ["GrpCSAT_MSAM1","SAM"],
 ["GrpCSAT_GMG1","GMG"],
 ["GrpCSAT_MC","MC"],
-["GrpCSAT_EOD","EOD"],
+["GrpCSAT_EOD","Sappers"],
 
 ["GrpCSAT_ST1","ST1"],
 
-["GrpCSAT_DT1","Pawn 1"],
-["GrpCSAT_DT2","Pawn 2"],
+["GrpCSAT_DT1","Zwiezda 1"],
+["GrpCSAT_DT2","Zwiezda 2"],
 
 ["GrpCSAT_ENG1","Logistics"],
 
@@ -120,10 +108,10 @@ _groups = [
 ["GrpCSAT_TNK2","Steel 1-2"],
 ["GrpCSAT_TNK3","Steel 1-3"],
 
-["GrpCSAT_TH1","Bull 1-1"],
-["GrpCSAT_TH2","Bull 1-2"],
-["GrpCSAT_TH3","Bull 1-3"],
-["GrpCSAT_TH4","Bull 1-4"],
+["GrpCSAT_TH1","Hunter 1-1"],
+["GrpCSAT_TH2","Hunter 1-2"],
+["GrpCSAT_TH3","Hunter 1-3"],
+["GrpCSAT_TH4","Hunter 1-4"],
 
 ["GrpCSAT_AH1","King"],
 
@@ -136,27 +124,18 @@ _groups = [
 ["GrpAAF_DC","1Plt-HQ"],
 ["GrpAAF_DC1","2Plt-HQ"],
 
-["GrpAAF_ASL","Able"],
-["GrpAAF_A1","A1"],
-["GrpAAF_A2","A2"],
+["GrpAAF_A","Able"],
 
-["GrpAAF_BSL","Baker"],
-["GrpAAF_B1","B1"],
-["GrpAAF_B2","B2"],
+["GrpAAF_B","Baker"],
 
-["GrpAAF_CSL","Charlie"],
-["GrpAAF_C1","C1"],
-["GrpAAF_C2","C2"],
+["GrpAAF_C","Charlie"],
 
-["GrpAAF_DSL","DSL"],
 ["GrpAAF_D","Dog"],
 ["GrpAAF_IFVD","DV"],
 
-["GrpAAF_ESL","ESL"],
 ["GrpAAF_E","Easy"],
 ["GrpAAF_IFVE","EV"],
 
-["GrpAAF_FSL","FSL"],
 ["GrpAAF_F","Fox"],
 ["GrpAAF_IFVF","FV"],
 
@@ -168,7 +147,7 @@ _groups = [
 ["GrpAAF_MSAM1","SAM"],
 ["GrpAAF_GMG1","GMG"],
 ["GrpAAF_MC","MC"],
-["GrpAAF_EOD","EOD"],
+["GrpAAF_EOD","Sappers"],
 
 ["GrpAAF_ST1","ST1"],
 
@@ -181,9 +160,9 @@ _groups = [
 ["GrpAAF_IFV2","Panther 1-2"],
 ["GrpAAF_IFV3","Panther 1-3"],
 
-["GrpAAF_TNK1","Lion 1-1"],
-["GrpAAF_TNK2","Lion 1-2"],
-["GrpAAF_TNK3","Lion 1-3"],
+["GrpAAF_TNK1","Heavy 1-1"],
+["GrpAAF_TNK2","Heavy 1-2"],
+["GrpAAF_TNK3","Heavy 1-3"],
 
 ["GrpAAF_TH1","Bull 1-1"],
 ["GrpAAF_TH2","Bull 1-2"],

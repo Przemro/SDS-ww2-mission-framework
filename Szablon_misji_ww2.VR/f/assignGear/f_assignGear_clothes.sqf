@@ -40,6 +40,7 @@ if (_typeOfUnit in _Sleader) then {
 
 // TL
 if (_typeOfUnit in _leader) then {
+	_helmet = _leaderHelmet;
 	_rig = _leaderRig;
 };
 

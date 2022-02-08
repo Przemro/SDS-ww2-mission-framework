@@ -111,8 +111,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addmagazines [_smokegrenadered,2];
+		//_unit addmagazines [_smokegrenadeblue,2];
+		//_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _smg;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
@@ -361,18 +361,17 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		_unit addweapon _MAT;
-		_unit addSecondaryWeaponItem _MAT_sight;
 		["matg"] call _backpack;
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
 	case "matag":
 	{
-		_unit addmagazines [_carbinemag,3];
-		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_riflemag,3];
+		_unit addmagazines [_riflemag_tr,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _carbine;
+		_unit addweapon _rifle;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
 		_unit addmagazines [_smokegrenade,2];
@@ -382,11 +381,11 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT AMMO BEARER
 	case "matab":
 	{
-		_unit addmagazines [_smgmag,3];
-		_unit addmagazines [_smgmag_tr,2];
+		_unit addmagazines [_riflemag,3];
+		_unit addmagazines [_riflemag_tr,2];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
-		_unit addweapon _smg;
+		_unit addweapon _rifle;
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		["matab"] call _backpack;
@@ -448,8 +447,8 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _mtrBarrel;
-		_unit addItem "ACE_MapTools";
-		_unit addItem "ACE_RangeTable_82mm";
+		_unit addItem _maptools;
+		_unit addItem _tableART;
 		["mtrg"] call _backpack;
 	};
 
@@ -465,8 +464,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon _lornetka;
 		_unit addweapon _mtrTripod;
-		_unit addItem "ACE_MapTools";
-		_unit addItem "ACE_RangeTable_82mm";
+		_unit addItem _maptools;
+		_unit addItem _tableART;
 		["mtrag"] call _backpack;
 	};
 
@@ -604,9 +603,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _cPhone;
+		_unit linkItem "ItemMap";
 		_unit addWeapon _lornetka;
-		_unit addItem _radioMR;
 		["vc"] call _backpack;
 	};
 
@@ -618,7 +616,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _GPS;
+		_unit linkItem "ItemMap";
 		["cc"] call _backpack;
 	};
 
@@ -630,7 +628,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _GPS;
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -639,7 +636,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _radioMR;
+		_unit linkItem "ItemMap";
 		["pp"] call _backpack;
 	};
 
@@ -649,6 +646,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit linkItem "ItemMap";
 		["cc"] call _backpack;
 	};
 	
@@ -666,12 +664,10 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE CREW
 	case "pc":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem _GPS;
+		_unit linkItem "ItemMap";
 	};
 
 // LOADOUT: ENGINEER (LOGI)
@@ -682,7 +678,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _mineDetector;
-		_unit linkItem _uavterminal;
 		_unit addWeapon _lornetka;
 		_unit addItem _radioMR;
 		["eng"] call _backpack;
@@ -696,9 +691,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _mineDetector;
-		_unit addItem _cPhone; 
+		_unit linkItem "ItemMap";
 		_unit addWeapon _lornetka;
-        _unit addMagazines ["Laserbatteries",2];
 		["engm"] call _backpack;
 	};
 
@@ -727,6 +721,7 @@ switch (_typeofUnit) do
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
         _unit addweapon _pistol;
+		_unit linkItem "ItemMap";
         _unit addWeapon _lornetka;
         ["RTO"] call _backpack;
 	};

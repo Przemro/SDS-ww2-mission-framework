@@ -84,14 +84,14 @@ _AntenaAndMast = "ACRE_VHF30108";
 
 // Basic night equipment
 _nvg = "NVGogglesB_blk_F";
-_IRstrobe = "ACE_IR_Strobe_Item";
+//_IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 
 // GL Flare
-_glflarewhite = "UGL_FlareWhite_F";
-_glflarered = "UGL_FlareRed_F";
-_glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "UGL_FlareGreen_F";
+_glflarewhite = "LIB_1Rnd_flare_white";
+_glflarered = "LIB_1Rnd_flare_red";
+_glflareyellow = "LIB_1Rnd_flare_yellow";
+_glflaregreen = "LIB_1Rnd_flare_green";
 
 // Hand Flares
 _flarewhite = "ACE_HandFlare_White";
@@ -142,11 +142,11 @@ _smokegrenade = "LIB_NB39";
 
 // Basic equipment
 _mineDetector = "ACE_VMM3";
-_toolkit = "ToolKit";
+_toolkit = "LIB_ToolKit";
 _n_rozbraja = "ACE_DefusalKit";
 
-_zapalnik = "ACE_Clacker";
-_zapalnik_b = "ACE_M26_Clacker";
+_zapalnik = "ACE_LIB_FireCord";
+_zapalnik_b = "ACE_LIB_LadungPM";
 _Dswitch = "ACE_DeadManSwitch";
 _cell = "ACE_Cellphone";
 
@@ -163,9 +163,9 @@ _uavterminal = "B_UavTerminal";
 _UAVbattery = "ACE_UAVBattery";
 
 // Mines
-_ATmine = "ATMine_Range_Mag";
-_APmine1 = "APERSBoundingMine_Range_Mag";
-_APmine2 = "APERSMine_Range_Mag";
+_ATmine = "LIB_TMI_42_MINE_mag";
+_APmine1 = "LIB_shumine_42_MINE_mag";
+_APmine2 = "LIB_SMI_35_1_MINE_mag";
 
 _tripMine = "APERSTripMine_Wire_Mag";
 _tripFlare = "ACE_FlareTripMine_Mag";
@@ -175,9 +175,9 @@ _IED = "IEDLandSmall_Remote_Mag";
 _IEDurban = "IEDUrbanSmall_Remote_Mag";
 
 // Explosives
-_satche_small = "ClaymoreDirectionalMine_Remote_Mag";
-_satche_big = "DemoCharge_Remote_Mag";
-_satche_extra_big = "SatchelCharge_Remote_Mag";
+_satche_small = "LIB_Ladung_Small_MINE_mag";
+_satche_big = "LIB_Ladung_Big_MINE_mag";
+_satche_extra_big = "LIB_US_TNT_4pound_mag";
 
 // ====================================================================================
 // Mortar Ammo and Static Gun Ammo
@@ -438,7 +438,7 @@ _specialmag_trSF = "ACE_20Rnd_762x51_Mag_Tracer";
 _SFpistol = "hgun_Pistol_heavy_01_F";								// SF pistol
 _SFpistolmag = "11Rnd_45ACP_Mag";
 */
-_AR = "LIB_MG42";										// Light machinegun
+_AR = "LIB_MG34";										// Light machinegun
 _ARmag = "LIB_50Rnd_792x57";
 _ARmag_tr = "LIB_50Rnd_792x57";
 
@@ -515,6 +515,7 @@ _baggmgag = "B_HMG_01_support_F";				// used by GMG assistant gunner
 // Basic uniform, helmet and glasses - random picked
 _baseUniform = ["U_LIB_GER_Recruit","U_LIB_GER_Schutze","U_LIB_GER_Soldier2","U_LIB_GER_Soldier3","U_LIB_GER_Soldier_camo2","U_LIB_GER_Soldier_camo3"];
 _baseHelmet = ["H_LIB_GER_Helmet", "H_LIB_GER_Helmet_net", "H_LIB_GER_Helmet_ns", "H_LIB_GER_Helmet_os","H_LIB_GER_HelmetCamo2","H_LIB_GER_HelmetCamo","H_LIB_GER_HelmetCamo4"];
+_leaderHelmet = ["H_LIB_GER_Helmet_Glasses"];
 _baseGlasses = [];
 
 // Vests
@@ -524,7 +525,8 @@ _mediumRig = ["V_LIB_GER_VestKar98"];	// general used vest for most inf
 _mgRig = ["V_LIB_GER_VestMG"];	// vest given to MG	// vest given to marksman
 _glRig = ["V_LIB_GER_VestKar98"];	// vest given to grenadier
 
-// Some definitions
+// Definicja jaka klasa do jakiej grupy ma się zaliczać
+// Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _hq = ["co"];
 _Sleader = ["dc"];
@@ -549,7 +551,7 @@ _hqHelmet = ["H_LIB_GER_OfficerCap"];
 _hqRig = ["V_LIB_GER_OfficerVest"];
 _hqGlasses = [];
 
-// Officer
+// Squad Leader
 _slUniform = ["U_LIB_GER_Unterofficer_HBT"];
 _slHelmet = ["H_LIB_GER_Helmet_Glasses"];
 _slRig = ["V_LIB_GER_VestUnterofficer"];

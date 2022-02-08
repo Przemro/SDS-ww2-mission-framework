@@ -46,7 +46,7 @@ case "doc":
 	(unitBackpack _unit) addItemCargoGlobal [_surgicalKit, 1];
 	(unitBackpack _unit) addItemCargoGlobal [_personalAidKit, 4];
 	//(unitBackpack _unit) addItemCargoGlobal [_accuvac, 1];
-	(unitBackpack _unit) addItemCargoGlobal [_AEDX, 1];
+	//(unitBackpack _unit) addItemCargoGlobal [_AEDX, 1];
 };
 
 // BACKPACK: Radio HQ (CO)
@@ -107,6 +107,7 @@ case "aar":
 {
 	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
+	(unitBackpack _unit) addItemCargoGlobal [_sBarrel,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_ARmag,3];
 	(unitBackpack _unit) addMagazineCargoGlobal [_ARmag_Tr,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag,1];
@@ -131,7 +132,6 @@ case "g":
 	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag_tr,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_glmag,6];
-	(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite,2];
 };
 
 // BACKPACK: RIFLEMAN (R)
@@ -224,7 +224,6 @@ case "matg":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
-	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 };
 
@@ -235,7 +234,6 @@ case "matag":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 1];
-	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
 	(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
 };
 
@@ -246,8 +244,7 @@ case "matab":
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_MATsptr, 4];
-	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
 // LOADOUT: HEAVY AT GUNNER (HATG)
