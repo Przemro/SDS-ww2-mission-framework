@@ -121,7 +121,6 @@
 		_unit addMagazineCargoGlobal [_APmine1, 10];
 		_unit addItemCargoGlobal [_zapalnik_b, 2];
 		_unit addItemCargoGlobal [_n_rozbraja, 2];
-		_unit addItemCargoGlobal [_UAVbattery, 2];
 		_unit addItemCargoGlobal [_AntenaAndMast, 1];
 		_unit addItemCargoGlobal [_towRope, 2];
 	};
@@ -148,7 +147,7 @@
 		//_unit addItemCargoGlobal [_chestSeal, 25];
 		_unit addItemCargoGlobal [_personalAidKit, 25];
 		_unit addItemCargoGlobal [_surgicalKit, 2];
-		_unit addItemCargoGlobal [_AEDX, 2];
+		//_unit addItemCargoGlobal [_AEDX, 2];
 		//_unit addItemCargoGlobal [_accuvac, 2];
 		//_unit addItemCargoGlobal [_Pulseoximeter, 2];
 		_unit addItemCargoGlobal [_worek, 25];
@@ -491,6 +490,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal ["LIB_FLARE_PISTOL", 5];
 		_unit addMagazineCargoGlobal [_glflarewhite,25];
 		_unit addMagazineCargoGlobal [_glflarered,25];
 		_unit addMagazineCargoGlobal [_glflareyellow,25];
@@ -498,13 +498,7 @@
 		_unit addMagazineCargoGlobal [_flarewhite,25];
 		_unit addMagazineCargoGlobal [_flarered,25];
 		_unit addMagazineCargoGlobal [_flareyellow,25];
-		_unit addMagazineCargoGlobal [_flaregreen,25];		
-		_unit addMagazineCargoGlobal [_chemgreen,25];
-		_unit addMagazineCargoGlobal [_chemred,25];
-		_unit addMagazineCargoGlobal [_chemyellow,25];
-		_unit addMagazineCargoGlobal [_chemblue,25];
-		_unit addMagazineCargoGlobal [_IRgrenade,25];
-		_unit addItemCargoGlobal [_IRstrobe,25];		
+		_unit addMagazineCargoGlobal [_flaregreen,25];				
 	};
 	
 // CRATE: Skrzynka, zasoby NOCNE
@@ -514,6 +508,7 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal ["LIB_FLARE_PISTOL", 5];
 		_unit addMagazineCargoGlobal [_glflarewhite,80];
 		_unit addMagazineCargoGlobal [_glflarered,80];
 		_unit addMagazineCargoGlobal [_glflareyellow,80];
@@ -521,13 +516,7 @@
 		_unit addMagazineCargoGlobal [_flarewhite,80];
 		_unit addMagazineCargoGlobal [_flarered,80];
 		_unit addMagazineCargoGlobal [_flareyellow,80];
-		_unit addMagazineCargoGlobal [_flaregreen,80];		
-		_unit addMagazineCargoGlobal [_chemgreen,80];
-		_unit addMagazineCargoGlobal [_chemred,80];
-		_unit addMagazineCargoGlobal [_chemyellow,80];
-		_unit addMagazineCargoGlobal [_chemblue,80];
-		_unit addMagazineCargoGlobal [_IRgrenade,80];		
-		_unit addItemCargoGlobal [_IRstrobe,80];		
+		_unit addMagazineCargoGlobal [_flaregreen,80];				
 	};
 	
 // CRATE: Skrzynka ładunki

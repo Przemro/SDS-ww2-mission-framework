@@ -104,10 +104,15 @@ force acex_field_rations_timeWithoutWater = 2;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
+force ace_fire_dropWeapon = 1;
 force ace_fire_enabled = true;
 force ace_fire_enableFlare = false;
+ace_fire_enableScreams = true;
 
 // ACE Fortify
+force ace_fortify_markObjectsOnMap = 1;
+force ace_fortify_timeCostCoefficient = 1;
+force ace_fortify_timeMin = 1.5;
 acex_fortify_settingHint = 1;
 
 // ACE Fragmentation Simulation
@@ -193,9 +198,9 @@ force ace_repair_engineerSetting_fullRepair = 1;
 force ace_repair_engineerSetting_repair = 1;
 force ace_repair_engineerSetting_wheel = 0;
 force ace_repair_fullRepairLocation = 3;
-force ace_repair_fullRepairRequiredItems = ["ToolKit"];
+force ace_repair_fullRepairRequiredItems = ["ace_repair_anyToolKit"];
 force ace_repair_locationsBoostTraining = true;
-force ace_repair_miscRepairRequiredItems = ["ToolKit"];
+force ace_repair_miscRepairRequiredItems = ["ace_repair_anyToolKit"];
 force ace_repair_repairDamageThreshold = 0.6;
 force ace_repair_repairDamageThreshold_engineer = 0.4;
 force ace_repair_wheelRepairRequiredItems = [];
@@ -348,24 +353,26 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force ace_nightvision_aimDownSightsBlur = 0.5;
+force ace_nightvision_aimDownSightsBlur = 0.3;
 force ace_nightvision_disableNVGsWithSights = false;
 force ace_nightvision_effectScaling = 1;
-force ace_nightvision_fogScaling = 1;
-force ace_nightvision_noiseScaling = 0.75;
+force ace_nightvision_fogScaling = 0.1;
+force ace_nightvision_noiseScaling = 0.6;
 force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
 force ace_overheating_cookoffCoef = 1;
+force ace_overheating_coolingCoef = 1;
 force ace_overheating_displayTextOnJam = false;
 force ace_overheating_enabled = true;
-force ace_overheating_heatCoef = 1;
+force ace_overheating_heatCoef = 0.6;
 force ace_overheating_jamChanceCoef = 1;
 force ace_overheating_overheatingDispersion = true;
 force ace_overheating_overheatingRateOfFire = true;
 ace_overheating_particleEffectsAndDispersionDistance = 3000;
 force ace_overheating_showParticleEffects = true;
 force ace_overheating_showParticleEffectsForEveryone = true;
+force ace_overheating_suppressorCoef = 1;
 force ace_overheating_unJamFailChance = 0.1;
 force ace_overheating_unJamOnreload = true;
 force ace_overheating_unJamOnSwapBarrel = false;
@@ -606,7 +613,7 @@ force diw_armor_plates_main_disallowFriendfire = false;
 force diw_armor_plates_main_enable = true;
 diw_armor_plates_main_hideUiSeconds = 5;
 force diw_armor_plates_main_maxPlateHealth = 15;
-force diw_armor_plates_main_numWearablePlates = 2;
+force diw_armor_plates_main_numWearablePlates = 1;
 diw_armor_plates_main_plateColor = [0.35,0.35,1,0.8];
 force diw_armor_plates_main_plateThickness = 20;
 force diw_armor_plates_main_protectOnlyTorso = true;
@@ -623,18 +630,6 @@ force cba_network_loadoutValidation = 2;
 cba_optics_usePipOptics = false;
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
-
-// CUP
-CUP_CheckCfgPatches = false;
-CUP_Vehicles_PreventBarrelClip = true;
-
-// CUP Static Weapons
-CUP_staticWeapons_allowMovement = false;
-CUP_staticWeapons_allowRotation = false;
-
-// CWR3
-cwr3_intro_customLogo = true;
-cwr3_intro_disableSpotlight = true;
 
 // GRAD CaptiveWalkingAnimation
 force grad_captiveWalking_functions_allowFreeing = true;
@@ -746,6 +741,7 @@ lambs_danger_disableAIHideFromTanksAndAircraft = false;
 lambs_danger_disableAIPlayerGroup = false;
 lambs_danger_disableAIPlayerGroupReaction = false;
 lambs_danger_disableAutonomousFlares = false;
+lambs_danger_disableAutonomousSmokeGrenades = false;
 force lambs_danger_panicChance = 0.1;
 
 // LAMBS Danger Eventhandlers
