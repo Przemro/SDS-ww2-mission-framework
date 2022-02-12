@@ -69,10 +69,10 @@ _saline_b = "ACE_salineIV";					// Saline 1000 ml
 // Radios - ACRE2
 
 // Radios
-_radioSR = "ACRE_PRC343";
-_radioMR = "ACRE_PRC152";
-_radioLR = "ACRE_PRC117F";
-//_radioLR = "ACRE_PRC77"; // early Cold War/WW2
+//_radioSR = "ACRE_PRC343";
+//_radioMR = "ACRE_PRC152";
+//_radioLR = "ACRE_PRC117F";
+_radioLR = "ACRE_PRC77"; // early Cold War/WW2
 
 // Antenas - dont have any usage in current ACRE 2 version
 _antena = "ACRE_VHF30108SPIKE";
@@ -285,8 +285,8 @@ Medical = {
 	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Add 8 pieces of bandages
 	_unit addItem _painkiller;								// Add painkillers
 	_unit addItem _epinephrine;								// Add Epi
-	_unit linkItem "ItemCompass";							// Add compas - comment this out if You dont want units to have it
-	_unit linkItem "ItemWatch";								// Add watch - comment this out if You dont want units to have it
+	_unit linkItem "LIB_GER_ItemCompass_deg";							// Add compas - comment this out if You dont want units to have it
+	_unit linkItem "LIB_GER_ItemWatch";								// Add watch - comment this out if You dont want units to have it
 	_unit addItem _earplugs;								// Add earplugs
 	_unit addItem _saperka;									// Add showel
 };
@@ -469,6 +469,8 @@ _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT
 _SNrifle = "srifle_LRR_F";											// Sniper
 _SNrifleMag = "7Rnd_408_Mag";
 
+_flammer = "41_Flammenwerfer_02_F";
+
 // ====================================================================================
 // Bagbacks
 
@@ -506,8 +508,8 @@ _baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
 _bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
 
-_baggmgg = "B_GMG_01_weapon_F";					// used by GMG gunner
-_baggmgag = "B_HMG_01_support_F";				// used by GMG assistant gunner
+_baggmgg = "41_Flammenwerfer_Balloons";					// used by GMG gunner
+_baggmgag = "41_Flammenwerfer_Balloons";				// used by GMG assistant gunner
 
 // ====================================================================================
 // Clothes etc.

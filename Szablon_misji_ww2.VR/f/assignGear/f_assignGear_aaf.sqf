@@ -73,10 +73,10 @@ _saline_b = "ACE_salineIV";					// Saline 1000 ml
 // Radios - ACRE2
 
 // Radios
-_radioSR = "ACRE_PRC343";
-_radioMR = "ACRE_PRC152";
-_radioLR = "ACRE_PRC117F";
-//_radioLR = "ACRE_PRC77"; // early Cold War/WW2
+//_radioSR = "ACRE_PRC343";
+//_radioMR = "ACRE_PRC152";
+//_radioLR = "ACRE_PRC117F";
+_radioLR = "ACRE_PRC77"; // early Cold War/WW2
 
 // Antenas
 _antena = "ACRE_VHF30108SPIKE";
@@ -478,7 +478,7 @@ _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT
 _SNrifle = "srifle_DMR_02_F";	// Sniper
 _SNrifleMag = "10Rnd_338_Mag";
 
-_flammer = "LIB_M2_Flamethrower";
+_flammer = "M2_Flamethrower_01_F";
 
 // ====================================================================================
 // Bagbacks
@@ -517,8 +517,8 @@ _baghatag = "I_HMG_01_support_F";				// used by Heavy AT assistant gunner
 _bagmtrg = "I_Mortar_01_weapon_F";				// used by Mortar gunner
 _bagmtrag = "I_Mortar_01_support_F";			// used by Mortar assistant gunner
 
-_baggmgg = "B_LIB_US_M2Flamethrower";					// used by GMG gunner
-_baggmgag = "B_LIB_US_M2Flamethrower";				// used by GMG assistant gunner
+_baggmgg = "M2_Flamethrower_Balloons_Pipe";					// used by GMG gunner
+_baggmgag = "M2_Flamethrower_Balloons_Pipe";				// used by GMG assistant gunner
 
 // ====================================================================================
 

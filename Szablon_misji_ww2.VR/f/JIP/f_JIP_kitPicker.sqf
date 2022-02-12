@@ -16,14 +16,12 @@ KitPickInit =
 	_idx = COMBO lbAdd "Medic"; COMBO lbSetData [_idx, "m"];
 	_idx = COMBO lbAdd "RTO"; COMBO lbSetData [_idx, "rto"];
 	_idx = COMBO lbAdd "Mechanic"; COMBO lbSetData [_idx, "engm"];
-    _idx = COMBO lbAdd "UAV"; COMBO lbSetData [_idx, "uav"];
 
 	COMBO lbAdd "----";
-	
+
     _idx = COMBO lbAdd "Squad Leader"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "Medic"; COMBO lbSetData [_idx, "m"];
-    COMBO lbAdd "----";
-
+    _idx = COMBO lbAdd "RTO"; COMBO lbSetData [_idx, "rto"];
     _idx = COMBO lbAdd "Team Leader"; COMBO lbSetData [_idx, "ftl"];
     _idx = COMBO lbAdd "Automatic Rifleman"; COMBO lbSetData [_idx, "ar"];
     _idx = COMBO lbAdd "AR Assistant"; COMBO lbSetData [_idx, "aar"];
@@ -31,6 +29,7 @@ KitPickInit =
     _idx = COMBO lbAdd "Rifleman AT"; COMBO lbSetData [_idx, "rat"];
     _idx = COMBO lbAdd "Grenadier"; COMBO lbSetData [_idx, "gren"];
     _idx = COMBO lbAdd "Rifleman"; COMBO lbSetData [_idx, "r"];
+
     COMBO lbAdd "----";
 	
     _idx = COMBO lbAdd "MMG Team Leader"; COMBO lbSetData [_idx, "dc"];
@@ -51,18 +50,6 @@ KitPickInit =
     _idx = COMBO lbAdd "HMG Ammo Bearer"; COMBO lbSetData [_idx, "hmgab"];
 	COMBO lbAdd "----";
 
-    _idx = COMBO lbAdd "HAT Team Leader"; COMBO lbSetData [_idx, "dc"];
-    _idx = COMBO lbAdd "HAT Gunner"; COMBO lbSetData [_idx, "hatg"];
-    _idx = COMBO lbAdd "HAT Assistant"; COMBO lbSetData [_idx, "hatag"];
-    _idx = COMBO lbAdd "HAT Ammo Bearer"; COMBO lbSetData [_idx, "hatab"];
-	COMBO lbAdd "----";
-	
-    _idx = COMBO lbAdd "AA Team Leader"; COMBO lbSetData [_idx, "dc"];
-    _idx = COMBO lbAdd "AA Gunner"; COMBO lbSetData [_idx, "msamg"];
-    _idx = COMBO lbAdd "AA Assistant"; COMBO lbSetData [_idx, "msamag"];
-    _idx = COMBO lbAdd "AA Ammo Bearer"; COMBO lbSetData [_idx, "msamab"];
-	COMBO lbAdd "----";
-
     _idx = COMBO lbAdd "GMG Team Leader"; COMBO lbSetData [_idx, "dc"];
     _idx = COMBO lbAdd "GMG Gunner"; COMBO lbSetData [_idx, "gmgg"];
     _idx = COMBO lbAdd "GMG Assistant"; COMBO lbSetData [_idx, "gmgag"];
@@ -74,31 +61,20 @@ KitPickInit =
     _idx = COMBO lbAdd "MTR Assistant"; COMBO lbSetData [_idx, "mtrag"];
     _idx = COMBO lbAdd "MTR Ammo Bearer"; COMBO lbSetData [_idx, "mtrab"];
 	COMBO lbAdd "----";
-	
-	_idx = COMBO lbAdd "Recon TL"; COMBO lbSetData [_idx, "sftl"];
-    _idx = COMBO lbAdd "Recon AT"; COMBO lbSetData [_idx, "sfat"];
-    _idx = COMBO lbAdd "Recon Sapper"; COMBO lbSetData [_idx, "sfs"];
-    _idx = COMBO lbAdd "Recon Medic"; COMBO lbSetData [_idx, "sfm"];
-	COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Vehicle Commander"; COMBO lbSetData [_idx, "vc"];
     _idx = COMBO lbAdd "Vehicle Gunner"; COMBO lbSetData [_idx, "vg"];
 	_idx = COMBO lbAdd "Vehicle Driver"; COMBO lbSetData [_idx, "vd"];
+    _idx = COMBO lbAdd "Vehicle Crew"; COMBO lbSetData [_idx, "vg"];
 	COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Pilot"; COMBO lbSetData [_idx, "pp"];
     _idx = COMBO lbAdd "Co-Pilot"; COMBO lbSetData [_idx, "pcc"];
 	COMBO lbAdd "----";
-	
-	_idx = COMBO lbAdd "Jet Pilot"; COMBO lbSetData [_idx, "ps"];
-	COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Logistics"; COMBO lbSetData [_idx, "eng"];
-    _idx = COMBO lbAdd "EOD UAV"; COMBO lbSetData [_idx, "enguav"];
     _idx = COMBO lbAdd "Doctor"; COMBO lbSetData [_idx, "doc"];
 	COMBO lbAdd "----";
-	
-	
 	
     _sel = player getVariable "KitPicker_Selection";
     if (!isNil '_sel') then

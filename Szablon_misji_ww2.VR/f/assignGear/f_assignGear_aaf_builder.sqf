@@ -445,6 +445,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
+		_unit addweapon _mtrBarrel;
+		_unit linkItem "ItemMap";
 		_unit addItem _maptools;
 		_unit addItem _tableART;
 		["mtrg"] call _backpack;
@@ -461,6 +463,8 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon _lornetka;
+		_unit addweapon _mtrTripod;
+		_unit linkItem "ItemMap";
 		_unit addItem _maptools;
 		_unit addItem _tableART;
 		["mtrag"] call _backpack;

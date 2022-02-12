@@ -365,10 +365,7 @@ case "gmgag":
 // LOADOUT: GMG AMMO BEARER (HSAMAB)
 case "gmgab":
 {
-	_unit addBackpack _bagextralarge;
-	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_mk19GMG, 8];
-	(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
+	_unit addBackpack _baggmgg;
 };
 
 // BACKPACK: ENGINEER (LOGI)
