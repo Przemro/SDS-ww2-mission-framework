@@ -298,7 +298,7 @@ case "mtrg":
 {
 	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 6];
+	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 4];
 	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
@@ -307,7 +307,7 @@ case "mtrag":
 {
 	_unit addBackpack _bagextralarge;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 6];
+	(unitBackpack _unit) addItemCargoGlobal [_mtrHE, 5];
 	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 };
 
