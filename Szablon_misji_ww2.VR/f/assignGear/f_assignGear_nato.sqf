@@ -538,7 +538,7 @@ _hq = ["co"];
 _Sleader = ["dc"];
 _leader = ["ftl"];
 _gl = ["gren"];
-_medR = ["m"];
+_medR = ["m","doc"];
 _engR = ["eng","engm"];
 _light = ["aar","mmgag","matag","hmgg","hmgag","hatag","msamag"];
 _mg =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
@@ -554,7 +554,7 @@ _ghillie = ["sn","sp"];
 // Officer
 _hqUniform = ["U_LIB_GER_Unterofficer_HBT"];
 _hqHelmet = ["H_LIB_GER_OfficerCap"];
-_hqRig = ["V_LIB_GER_OfficerVest"];
+_hqRig = ["V_LIB_GER_VestSTG"];
 _hqGlasses = [];
 
 // Squad Leader

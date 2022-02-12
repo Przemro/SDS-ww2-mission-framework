@@ -677,7 +677,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addweapon _mineDetector;
 		_unit addWeapon _lornetka;
-		_unit addItem _radioMR;
+		_unit linkItem "ItemMap";
 		["eng"] call _backpack;
 	};
 
@@ -730,7 +730,6 @@ switch (_typeofUnit) do
         _unit addmagazines [_smgmag,5];
         _unit addmagazines [_smgmag_tr,2];
         _unit addweapon _smg;
-     
         _unit addmagazines [_smokegrenade,2];
         _unit addmagazines [_grenade,2];
         _unit addmagazines [_pistolmag,3];
