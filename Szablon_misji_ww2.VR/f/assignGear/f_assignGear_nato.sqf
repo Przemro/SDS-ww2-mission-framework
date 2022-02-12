@@ -411,6 +411,10 @@ _smg = "LIB_MP40";												// PDW (its for crews, pilots - units that are not
 _smgmag = "LIB_32Rnd_9x19";
 _smgmag_tr = "LIB_32rnd_9x19_t";
 
+_smg2 = "LIB_MP44";												// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smg2mag = "LIB_30Rnd_792x33";
+_smg2mag_tr = "LIB_30rnd_792x33_t";
+
 _glrifle = "LIB_K98";									// GL version (mostly for commanders but also for grenadiers)
 _glriflemag = "LIB_5Rnd_792x57";
 _glriflemag_tr = "LIB_5Rnd_792x57_t";

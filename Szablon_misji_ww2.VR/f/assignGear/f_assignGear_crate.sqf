@@ -419,7 +419,7 @@
 		_unit addItemCargoGlobal [_Hmag,15];
 	};
 
-// CRATE: Skrzynka, zasoby HMG
+// CRATE: Skrzynka, zasoby GMG
 	case "crate_gmg":
 	{
 		clearWeaponCargoGlobal _unit;
@@ -458,11 +458,11 @@
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadeblue, 10];
 		_unit addMagazineCargoGlobal [_smokegrenadered, 10];
-		_unit addMagazineCargoGlobal [_flashbang, 10];
-		_unit addMagazineCargoGlobal [_igrenade, 10];
+		//_unit addMagazineCargoGlobal [_flashbang, 10];
+		//_unit addMagazineCargoGlobal [_igrenade, 10];
 		_unit addItemCargoGlobal [_handcuffs, 10];
-		_unit addItemCargoGlobal [_huntIR_tab, 2];
-		_unit addItemCargoGlobal [_spottingScope, 2];
+		//_unit addItemCargoGlobal [_huntIR_tab, 2];
+		//_unit addItemCargoGlobal [_spottingScope, 2];
 		_unit addItemCargoGlobal [_bandage, 50];
 		_unit addItemCargoGlobal [_bandage_elastic, 50];
 		_unit addItemCargoGlobal [_bandage_packing, 50];
@@ -558,8 +558,8 @@
 		clearMagazineCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
 		clearBackpackCargoGlobal _unit;
-		_unit addItemCargoGlobal [_radioSR,15];
-		_unit addItemCargoGlobal [_radioMR,10];
+		//_unit addItemCargoGlobal [_radioSR,15];
+		//_unit addItemCargoGlobal [_radioMR,10];
 		_unit addItemCargoGlobal [_radioLR,5];
 		_unit addItemCargoGlobal [_antena,3];
 		_unit addItemCargoGlobal [_mast,3];
@@ -588,11 +588,11 @@
 		clearBackpackCargoGlobal _unit;
 		_unit addItemCargoGlobal [_earplugs,15];
 		_unit addItemCargoGlobal [_handcuffs,15];
-		_unit addItemCargoGlobal [_sprayRED,15];
-		_unit addItemCargoGlobal [_sprayBLUE,15];
-		_unit addItemCargoGlobal [_sprayGREEN,15];
-		_unit addItemCargoGlobal [_sprayBLACK,15];
-		_unit addItemCargoGlobal [_UAVbattery,15];
+		//_unit addItemCargoGlobal [_sprayRED,15];
+		//_unit addItemCargoGlobal [_sprayBLUE,15];
+		//_unit addItemCargoGlobal [_sprayGREEN,15];
+		//_unit addItemCargoGlobal [_sprayBLACK,15];
+		//_unit addItemCargoGlobal [_UAVbattery,15];
 		_unit addItemCargoGlobal [_maptools,5];
 		_unit addItemCargoGlobal [_tableMTR,5];
 		_unit addItemCargoGlobal [_tableART,5];

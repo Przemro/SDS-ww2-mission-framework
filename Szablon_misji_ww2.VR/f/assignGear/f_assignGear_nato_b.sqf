@@ -54,8 +54,8 @@ case "HQ":
 {
 	_unit addBackpack _bagTL;
 	clearMagazineCargoGlobal (unitBackpack _unit);
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag,2];
-	(unitBackpack _unit) addMagazineCargoGlobal [_riflemag_tr,2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag,2];
+	(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag_tr,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_grenade,2];
 	(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,2];
 };

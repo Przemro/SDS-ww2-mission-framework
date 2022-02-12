@@ -89,14 +89,14 @@ switch (_typeofUnit) do
 // LOADOUT: COY HQ/PLT HQ
 	case "co":
 	{
-		_unit addmagazines [_riflemag,3];
-		_unit addmagazines [_riflemag_tr,2];;
+		_unit addmagazines [_smg2mag,3];
+		_unit addmagazines [_smg2mag_tr,2];;
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addmagazines [_smokegrenadered,2];
-		_unit addweapon _rifle;
+		_unit addweapon _smg2;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
 		_unit linkItem "ItemMap";

@@ -66,25 +66,20 @@ if(_mycrate != "") then
 
 /*
 
-_null = this addAction ["Small ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_small",faction1] ];
-_null = this addAction ["Medium ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_med",faction1] ];
-_null = this addAction ["Big ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_large",faction1] ];
-_null = this addAction ["Small medical", "f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",faction1] ];
-_null = this addAction ["Big medcial", "f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",faction1] ];
-_null = this addAction ["MMG ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_mmg",faction1] ];
-_null = this addAction ["HMG ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_hmg",faction1] ];
-_null = this addAction ["MAT ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_mat",faction1] ];
-_null = this addAction ["HAT ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_hat",faction1] ];
-_null = this addAction ["HAT(static) ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_hat_alt",faction1] ];
-_null = this addAction ["SAM ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_sam",faction1] ];
-_null = this addAction ["GMG ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_gmg",faction1] ];
-_null = this addAction ["Mortar ammo", "f\assignGear\SpawnCrate.sqf", ["crate_MTR",faction1] ];
-_null = this addAction ["Explosives", "f\assignGear\SpawnCrate.sqf", ["crate_explo",faction1] ];
-_null = this addAction ["Mines", "f\assignGear\SpawnCrate.sqf", ["crate_mines",faction1] ];
-_null = this addAction ["Night equipment small", "f\assignGear\SpawnCrate.sqf", ["crate_night_small",faction1] ];
-_null = this addAction ["Night equipment big", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ];
-_null = this addAction ["SF ammo", "f\assignGear\SpawnCrate.sqf", ["crate_spec",faction1] ];
-_null = this addAction ["Radios", "f\assignGear\SpawnCrate.sqf", ["crate_radio",faction1] ];
+_null = this addAction ["Small ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_small",faction1] ]; 
+_null = this addAction ["Medium ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_med",faction1] ]; 
+_null = this addAction ["Big ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_large",faction1] ]; 
+_null = this addAction ["Small medical", "f\assignGear\SpawnCrate.sqf", ["crate_smallmedical",faction1] ]; 
+_null = this addAction ["Big medcial", "f\assignGear\SpawnCrate.sqf", ["crate_bigmedical",faction1] ]; 
+_null = this addAction ["MMG ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_mmg",faction1] ]; 
+_null = this addAction ["HMG ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_hmg",faction1] ]; 
+_null = this addAction ["MAT ammo box", "f\assignGear\SpawnCrate.sqf", ["crate_mat",faction1] ]; 
+_null = this addAction ["Mortar ammo", "f\assignGear\SpawnCrate.sqf", ["crate_MTR",faction1] ]; 
+_null = this addAction ["Explosives", "f\assignGear\SpawnCrate.sqf", ["crate_explo",faction1] ]; 
+_null = this addAction ["Mines", "f\assignGear\SpawnCrate.sqf", ["crate_mines",faction1] ]; 
+_null = this addAction ["Night equipment small", "f\assignGear\SpawnCrate.sqf", ["crate_night_small",faction1] ]; 
+_null = this addAction ["Night equipment big", "f\assignGear\SpawnCrate.sqf", ["crate_night_big",faction1] ]; 
+_null = this addAction ["Radios", "f\assignGear\SpawnCrate.sqf", ["crate_radio",faction1] ]; 
 _null = this addAction ["Miscellaneous", "f\assignGear\SpawnCrate.sqf", ["crate_misc",faction1] ];
 
 /*
