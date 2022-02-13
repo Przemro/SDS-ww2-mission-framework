@@ -552,7 +552,7 @@ _specOp = ["sftl","sfm","sfat","sfs"];
 _ghillie = ["sn","sp"];
 
 // Officer
-_hqUniform = ["U_LIB_GER_Unterofficer_HBT"];
+_hqUniform = ["U_LIB_GER_Oberst"];
 _hqHelmet = ["H_LIB_GER_OfficerCap"];
 _hqRig = ["V_LIB_GER_VestSTG"];
 _hqGlasses = [];
