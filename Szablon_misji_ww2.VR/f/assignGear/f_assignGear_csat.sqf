@@ -73,10 +73,10 @@ _saline_b = "ACE_salineIV";					// Saline 1000 ml
 // Radios - ACRE2
 
 // Radios
-_radioSR = "ACRE_PRC343";
-_radioMR = "ACRE_PRC152";
-_radioLR = "ACRE_PRC117F";
-//_radioLR = "ACRE_PRC77"; // early Cold War/WW2
+//_radioSR = "ACRE_PRC343";
+//_radioMR = "ACRE_PRC152";
+//_radioLR = "ACRE_PRC117F";
+_radioLR = "ACRE_PRC77"; // early Cold War/WW2
 
 // Antenas - dont have any usage in current ACRE 2 version
 _antena = "ACRE_VHF30108SPIKE";
@@ -88,14 +88,14 @@ _AntenaAndMast = "ACRE_VHF30108";
 
 // Basic night equipment
 _nvg = "NVGogglesB_blk_F";
-_IRstrobe = "ACE_IR_Strobe_Item";
+//_IRstrobe = "ACE_IR_Strobe_Item";
 _latarka = "ACE_Flashlight_XL50";
 
 // GL Flare
-_glflarewhite = "UGL_FlareWhite_F";
-_glflarered = "UGL_FlareRed_F";
-_glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "UGL_FlareGreen_F";
+_glflarewhite = "LIB_1Rnd_flare_white";
+_glflarered = "LIB_1Rnd_flare_red";
+_glflareyellow = "LIB_1Rnd_flare_yellow";
+_glflaregreen = "LIB_1Rnd_flare_green";
 
 // Hand Flares
 _flarewhite = "ACE_HandFlare_White";
@@ -118,14 +118,15 @@ _chemblueHI = "ACE_Chemlight_HiBlue";
 // Grenades and GLs
 
 // Hand granade
-_grenade = "HandGrenade";	//basic frag granade
-_flashbang = "ACE_M84";		//flashbang
-_flashbang9 = "ACE_CTS9";	//flashbang 9-bangs
-_igrenade = "ACE_M14"; 		//incidenary
-_IRgrenade = "O_IR_Grenade";
+_grenade = "LIB_F1";	//basic frag granade
+//_flashbang = "ACE_M84";		//flashbang
+//_flashbang9 = "ACE_CTS9";	//flashbang 9-bangs
+//_igrenade = "ACE_M14"; 		//incidenary
+//_IRgrenade = "O_IR_Grenade";
 
 // Granaty dymne
-_smokegrenade = "SmokeShell";
+_smokegrenade = "LIB_RDG";
+/*
 _smokegrenadegreen = "SmokeShellGreen";
 _smokegrenadeblue = "SmokeShellBlue";
 _smokegrenadered = "SmokeShellRed";
@@ -140,17 +141,17 @@ _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
 _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 _glsmokeblue = "1Rnd_SmokeBlue_Grenade_shell";
-
+*/
 // ====================================================================================
 // Mines/Expolisved/Logi stuff
 
 // Basic equipment
 _mineDetector = "ACE_VMM3";
-_toolkit = "ToolKit";
+_toolkit = "LIB_ToolKit";
 _n_rozbraja = "ACE_DefusalKit";
 
-_zapalnik = "ACE_Clacker";
-_zapalnik_b = "ACE_M26_Clacker";
+_zapalnik = "ACE_LIB_FireCord";
+_zapalnik_b = "ACE_LIB_LadungPM";
 _Dswitch = "ACE_DeadManSwitch";
 _cell = "ACE_Cellphone";
 
@@ -187,9 +188,12 @@ _satche_extra_big = "SatchelCharge_Remote_Mag";
 // Mortar Ammo and Static Gun Ammo
 
 // Basic ammo
-_mtrHE = "ACE_1Rnd_82mm_Mo_HE";
-_mtrSmoke = "ACE_1Rnd_82mm_Mo_Smoke";
-_mtrFlare = "ACE_1Rnd_82mm_Mo_Illum";
+_mtrHE = "LIB_1rnd_82mmHE_BM37";
+_mtrSmoke = "LIB_82mm_BM37_SmokeShell";
+_mtrFlare = "LIB_1Rnd_82mm_Mo_Illum";
+
+_mtrBarrel = "LIB_BM37_Barrel";
+_mtrTripod = "LIB_BM37_Tripod";
 
 // Adv ammo - not used
 _mtrHEg = "ACE_1Rnd_82mm_Mo_HE_Guided";
@@ -224,9 +228,7 @@ _hCam = "ItemcTabHCam";
 _armorPlate = "diw_armor_plates_main_plate";
 
 // Binoculars
-_lornetkaAM = "ACE_Vector";
-_lornetkaFTL = "Binocular";
-_lornetkaRTO = "Laserdesignator";
+_lornetka = "LIB_Binocular_SU";
 
 //Navigation & sniper stuff
 _cTAB = "ItemcTab";
@@ -286,11 +288,10 @@ Medical = {
 	for "_p" from 1 to 8 do {_unit addItem _bandage;};		// Add 8 pieces of bandages
 	_unit addItem _painkiller;								// Add painkillers
 	_unit addItem _epinephrine;								// Add Epi
-	_unit linkItem "ItemMap";								// Add map - comment this out if You dont want units to have it
 	_unit linkItem "ItemCompass";							// Add compas - comment this out if You dont want units to have it
-	_unit addItem _radioSR;									// Add radio - comment this out if You dont want units to have it
 	_unit linkItem "ItemWatch";								// Add watch - comment this out if You dont want units to have it
 	_unit addItem _earplugs;								// Add earplugs
+	_unit addItem _saperka;									// Add showel
 };
 
 // ====================================================================================
@@ -362,8 +363,8 @@ _attach1 = "acc_pointer_IR";	// Laser
 _attach2 = "acc_flashlight";	// Flashlight
 //_attach3 = "";				// Laser + Flashlight
 
-_silencer1 = "muzzle_snds_H";			// Silencer for basic weapon
-_silencer2 = "muzzle_snds_H_snd_F";		// Silencer for additional weapon (for SF etc.)
+_silencer1 = "LIB_ACC_M1891_Bayo";			// Silencer for basic weapon
+_silencer2 = "LIB_ACC_GL_DYAKONOV_Empty";		// Silencer for additional weapon (for SF etc.)
 
 _scope1 = "optic_ACO_grn";			// Basic scope
 _scope2 = "optic_ERCO_blk_F";			// Additional scope (for SF etc.)
@@ -376,10 +377,10 @@ _bipod2 = "bipod_02_F_blk";				// Bipod for additional weapon (for SF etc.)
 
 _loadout_night_day = f_param_night_day_wyp;
 if (_loadout_night_day == 0) then {					// Eatch unit will recive (if possible) one ot his sets of attachments
-	_attachments = [_attach1,_scope1];		//For night
+	_attachments = [_silencer1];		//For night
 } 
 else {
-	_attachments = [_scope1];		//For day
+	_attachments = [_silencer1];		//For day
 };
 
 /*
@@ -399,26 +400,26 @@ _hg_attachments= [];
 // ====================================================================================
 // Weapons
 
-_rifle = "arifle_AK12_F";	// Basic weapon (its for most of basic units, like rifleman etc.)
-_riflemag = "30Rnd_762x39_AK12_Mag_F";
-_riflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
+_rifle = "LIB_M9130";	// Basic weapon (its for most of basic units, like rifleman etc.)
+_riflemag = "LIB_5Rnd_762x54";
+_riflemag_tr = "LIB_5Rnd_762x54_t46";
 
-_carbine = "arifle_AK12U_F";	// Light/short version (its for units with additional equipment, like medic etc.)
-_carbinemag = "30Rnd_762x39_AK12_Mag_F";
-_carbinemag_tr = "30Rnd_762x39_Mag_Tracer_F";
+_carbine = "LIB_SVT_40";	// Light/short version (its for units with additional equipment, like medic etc.)
+_carbinemag = "LIB_10Rnd_762x54";
+_carbinemag_tr = "LIB_10Rnd_762x54_t46";
 
-_smg = "SMG_03C_black";	// PDW (its for crews, pilots - units that are not supposed to be fighting)
-_smgmag = "50Rnd_570x28_SMG_03";
-_smgmag_tr = "50Rnd_570x28_SMG_03";
+_smg = "LIB_PPSh41_m";	// PDW (its for crews, pilots - units that are not supposed to be fighting)
+_smgmag = "lib_35Rnd_762x25";
+_smgmag_tr = "lib_35Rnd_762x25_t";
 
-_glrifle = "arifle_AK12_GL_F";	// GL version (mostly for commanders but also for grenadiers)
-_glriflemag = "30Rnd_762x39_AK12_Mag_F";
-_glriflemag_tr = "30Rnd_762x39_Mag_Tracer_F";
-_glmag = "1Rnd_HE_Grenade_shell";
+_glrifle = "LIB_M9130";	// GL version (mostly for commanders but also for grenadiers)
+_glriflemag = "LIB_5Rnd_762x54";
+_glriflemag_tr = "LIB_5Rnd_762x54_t46";
+_glmag = "LIB_1Rnd_G_DYAKONOV";
 
-_pistol = "hgun_Pistol_01_F";	// Pistol (for everyone YAY!)
-_pistolmag = "10Rnd_9x21_Mag";
-
+_pistol = "LIB_TT33";	// Pistol (for everyone YAY!)
+_pistolmag = "LIB_8Rnd_762x25";
+/*
 _glrifleSF = "arifle_CTAR_GL_blk_F";	// SF GL rifle
 _glriflemagSF = "30Rnd_580x42_Mag_F";
 _glriflemag_trSF = "ACE_30Rnd_580x42_Mag_tracer_yellow";
@@ -437,24 +438,24 @@ _specialmag_trSF = "20Rnd_650x39_Cased_Mag_F";
 
 _SFpistol = "hgun_Rook40_F";	// SF pistol
 _SFpistolmag = "16Rnd_9x21_Mag";
-
-_AR = "arifle_RPK12_F";	// Light machinegun
-_ARmag = "75rnd_762x39_AK12_Mag_F";
-_ARmag_tr = "75rnd_762x39_AK12_Mag_Tracer_F";
+*/
+_AR = "LIB_DP28";	// Light machinegun
+_ARmag = "LIB_47Rnd_762x54";
+_ARmag_tr = "LIB_47Rnd_762x54";
 
 _MMG = "MMG_01_tan_F";	// Medium machinegun
 _MMGmag = "150Rnd_93x64_Mag";
 _MMGmag_tr = "ACE_150Rnd_93x64_Mag_yellow";
 
-_DMrifle = "srifle_DMR_05_blk_F";	// Marksman
-_DMriflemag = "10Rnd_93x64_DMR_05_Mag";
+_DMrifle = "LIB_M9130PU";	// Marksman
+_DMriflemag = "LIB_5Rnd_762x54";
 
-_RAT = "launch_RPG32_F";	// Light AT
-_RATmag = "RPG32_F";
+//_RAT = "launch_RPG32_F";	// Light AT
+_RATmag = "LIB_Rpg6";
 
-_MAT = "launch_O_Vorona_brown_F";	// Medium anti tank launcher
-_MATmag1 = "Vorona_HEAT";
-_MATmag2 = "Vorona_HE";
+_MAT = "LIB_PTRD";	// Medium anti tank launcher
+_MATmag1 = "LIB_1Rnd_145x114";
+_MATmag2 = "LIB_1Rnd_145x114_T";
 //_MAT_sight = "";
 //_MATsptr = "";
 
@@ -469,36 +470,38 @@ _HAT_Mobile = true;		//true = HAT have launher and normal backpacks /false = HAT
 _SNrifle = "srifle_GM6_F";	// Sniper
 _SNrifleMag = "5Rnd_127x108_Mag";
 
+_flammer = "41_Flammenwerfer_02_F";
+
 // ====================================================================================
 // Bagbacks
 
-_parachute = "B_Parachute";
+_parachute = "B_LIB_SOV_RA_Paradrop";
 _bagmediumdiver =  "B_SCBA_01_F";				// Contact DLC
 
-_bagsmall = "B_AssaultPack_ocamo";
-_bagmedium = "B_TacticalPack_ocamo";
-_baglarge =  "B_Carryall_ocamo";
-_bagextralarge = "B_Bergen_hex_F";			//APEX DLC
+_bagsmall = "B_LIB_SOV_RA_Rucksack_Green";
+_bagmedium = "B_LIB_SOV_RA_Rucksack2_Shinel_Green";
+_baglarge =  "B_LIB_SOV_RA_Rucksack2_Gas_Kit_Green";
+_bagextralarge = "B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel_Green";			//APEX DLC
 
-_bagMed = "B_Carryall_cbr";						//For dedicated medical bagpacks
+_bagMed = "B_LIB_SOV_RA_MedicalBag_Empty";						//For dedicated medical bagpacks
 
-_bagRadio = "B_RadioBag_01_hex_F";				//Contact DLC
+_bagRadio = "B_LIB_SOV_RA_Radio_ACRE2";				//Contact DLC
 
-_bagTL = "B_Kitbag_cbr";
-_bagTLalt = "B_AssaultPack_cbr";
+_bagTL = "B_LIB_SOV_RA_Rucksack2_Green";
+_bagTLalt = "B_LIB_SOV_RA_Rucksack_Green";
 
-_bagENG = "B_FieldPack_ocamo";
+_bagENG = "B_LIB_SOV_RA_GasBag";
 _bagEODuav = "O_UGV_02_Demining_backpack_F";	//Contact DLC
 
-_bagMAT = "B_Carryall_cbr";					// Contact DLC, for dedicated AT bagpacks
+_bagMAT = "B_LIB_SOV_RA_Rucksack_Green";					// Contact DLC, for dedicated AT bagpacks
 
 _bagSF = "B_ViperHarness_hex_F";
 
 _baguav = "O_UAV_01_backpack_F"; 
 _bagSOFLAM = "O_Static_Designator_02_weapon_F";
 
-_baghmgg = "O_HMG_01_weapon_F";					// used by Heavy MG gunner
-_baghmgag = "O_HMG_01_support_F";				// used by Heavy MG assistant gunner
+_baghmgg = "LIB_Maxim_Bar";					// used by Heavy MG gunner
+_baghmgag = "LIB_Maxim_Bag";				// used by Heavy MG assistant gunner
 
 _baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
 _baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
@@ -515,70 +518,90 @@ _baggmgag = "O_HMG_01_support_F";				// used by GMG assistant gunner
 
 // Podstawowe mundury
 // Elementy wyposażenia są losowo wybierane z listy
-_baseUniform = ["U_O_CombatUniform_ocamo"];
-_baseHelmet = ["H_HelmetSpecO_ocamo", "H_HelmetLeaderO_ocamo", "H_HelmetO_ocamo"];
+_baseUniform = ["U_LIB_SOV_Efreitor_summer", "U_LIB_SOV_Strelok_summer"];
+_baseHelmet = ["H_LIB_SOV_RA_PrivateCap", "H_LIB_SOV_Ushanka", "H_LIB_SOV_RA_Helmet"];
+_leaderHelmet = ["H_LIB_SOV_RA_Helmet"];
 _baseGlasses = [];
 
 // Kamizelki
-_leaderRig = ["V_HarnessOGL_brn"];	// vest for Team Leaders and Squad Leaders, shoud have GL/radio
-_lightRig = ["V_HarnessO_brn"];	// vest given to heavy units - meaning they carry some heavy stuff on them
-_mediumRig = ["V_HarnessO_brn"];	// general used vest for most inf
-_mgRig = ["V_HarnessO_brn"];	// vest given to MG
-_dmRig = ["V_HarnessO_brn"];	// vest given to marksman
-_glRig = ["V_HarnessO_brn"];	// vest given to grenadier
+_leaderRig = ["V_LIB_SOV_RA_OfficerVest"];	// vest for Team Leaders and Squad Leaders, shoud have GL/radio
+_lightRig = ["V_LIB_SOV_RA_SVTBelt"];	// vest given to heavy units - meaning they carry some heavy stuff on them
+_mediumRig = ["V_LIB_SOV_RA_MosinBelt"];	// general used vest for most inf
+_mgRig = ["V_LIB_SOV_RA_MGBelt_Kit"];	// vest given to MG
+_glRig = ["V_LIB_SOV_RA_MosinBelt"];	// vest given to grenadier
 
 // Definicja jaka klasa do jakiej grupy ma się zaliczać
 // Jeżeli jakaś klasa nie jest tutaj dopisana domyslnie trafi do "_medium"
 
 _hq = ["co"];
-_leader = ["ftl", "dc"];
+_Sleader = ["dc"];
+_leader = ["ftl"];
 _gl = ["gren"];
-_medR = ["m"];
+_medR = ["m","doc"];
 _engR = ["eng","engm"];
-_light = ["aar","mmgag","matag","hmgg","hmgag","hatag","msamag"];
+_light = ["aar","mmgag","hmgab","msamag"];
 _mg =  ["ar","mmgg"];	//Will be used for MG/MMG gunners
 _dm = ["dm"];
 _pilot = ["pp","pcc","pc"];
 _JPilotR = ["ps"];
-_crew = ["vc","vg","vd"];
+_crew = ["vg","vd"];
+_crewC = ["vc"];
 _diver = ["divc","divr","divs","divm"];
 _specOp = ["sftl","sfm","sfat","sfs"];
 _ghillie = ["sn","sp"];
 
 // Officer
-_hqUniform = ["U_O_OfficerUniform_ocamo"];
-_hqHelmet = ["H_Beret_CSAT_01_F"];
-_hqRig = ["V_TacVest_khk"];
+_hqUniform = ["U_LIB_SOV_Kapitan_summer"];
+_hqHelmet = ["H_LIB_SOV_RA_OfficerCap"];
+_hqRig = ["V_LIB_SOV_RA_OfficerVest"];
 _hqGlasses = [];
 
+// Squad Leader
+_slUniform = ["U_LIB_SOV_Sergeant"];
+_slHelmet = ["H_LIB_SOV_RA_OfficerCap"];
+_slRig = ["V_LIB_SOV_RA_OfficerVest"];
+_slGlasses = [];
+
 // Medic
-_medUniform = ["U_O_CombatUniform_ocamo"];
-_medHelmet = ["H_HelmetSpecO_blk"];
-_medRig = ["V_TacVest_blk"];
+_medUniform = ["U_LIB_SOV_Efreitor_summer"];
+_medHelmet = ["H_LIB_SOV_RA_PrivateCap"];
+_medRig = ["V_LIB_SOV_RA_SVTBelt"];
 _medGlasses = [];
 
+// Marksman
+_dmUniform = ["U_LIB_SOV_Sniper"];
+_dmHelmet = ["H_LIB_SOV_RA_Helmet"];
+_dmRig = ["V_LIB_SOV_RA_SniperVest"];
+_dmGlasses = [];
+
 // Enginer/Logi
-_engUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
-_engHelmet = ["H_HelmetB", "H_HelmetB_camo", "H_HelmetB_sand"];
-_engRig = ["V_TacVest_blk"];
+_engUniform = ["U_LIB_SOV_Efreitor_summer"];
+_engHelmet = ["H_LIB_SOV_RA_PrivateCap", "H_LIB_SOV_Ushanka"];
+_engRig = ["V_LIB_SOV_RA_MosinBelt"];
 _engGlasses = [];
 
 // Heli Pilot
-_pilotUniform = ["U_O_officer_noInsignia_hex_F"];
-_pilotHelmet = ["H_PilotHelmetHeli_O","H_CrewHelmetHeli_O"];
-_pilotRig = ["V_TacVest_khk"];
+_pilotUniform = ["U_LIB_SOV_Pilot"];
+_pilotHelmet = ["H_LIB_SOV_PilotHelmet"];
+_pilotRig = ["V_LIB_SOV_RAZV_MGBelt"];
 _pilotGlasses = [];
 
-// Jet Pilot
+// Jet Pilot - not used
 _JPilotUniform = ["U_O_PilotCoveralls"];
 _JPilotHelmet = ["H_PilotHelmetFighter_O"];
 _JPilotRig = [];
 _JPilotGlasses = [];
 
+// Crew Commander
+_crewCUniform = ["U_LIB_SOV_Tank_kapitan"];
+_crewCHelmet = ["H_LIB_SOV_TankHelmet"];
+_crewCRig = ["V_LIB_SOV_RA_TankOfficerSet"];
+_crewCGlasses = [];
+
 // Crew
-_crewUniform = ["U_O_officer_noInsignia_hex_F"];
-_crewHelmet = ["H_Tank_black_F"];
-_crewRig = ["V_TacVest_blk"];
+_crewUniform = ["U_LIB_SOV_Tank_ryadovoi","U_LIB_SOV_Tank_sergeant", "U_LIB_SOV_Tank_leutenant"];
+_crewHelmet = ["H_LIB_SOV_TankHelmet"];
+_crewRig = ["V_LIB_SOV_RAZV_MGBelt"];
 _crewGlasses = [];
 
 // Divers

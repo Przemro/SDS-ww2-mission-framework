@@ -218,6 +218,8 @@ _earplugs = "ACE_EarPlugs";
 _handcuffs = "ACE_CableTie";
 _Chemlight_Shield = "ACE_Chemlight_Shield";
 _heliRope = "ACE_rope36";
+_towRope = "ACE_rope3";
+_sBarrel = "ACE_SpareBarrel";
 _hCam = "ItemcTabHCam";
 _armorPlate = "diw_armor_plates_main_plate";
 

@@ -94,8 +94,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
-		_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _smg2;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
@@ -111,8 +109,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		//_unit addmagazines [_smokegrenadeblue,2];
-		//_unit addmagazines [_smokegrenadered,2];
 		_unit addweapon _smg;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
@@ -128,7 +124,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _smg;
 		_unit addweapon _pistol;
 		_unit addWeapon _lornetka;
@@ -144,7 +139,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _carbine;
 		_unit addweapon _pistol;
 		["m"] call _backpack;
@@ -158,7 +152,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,3];
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_smokegrenadeblue,2];
 		_unit addweapon _smg;
 		_unit addweapon _pistol;
 		["doc"] call _backpack;

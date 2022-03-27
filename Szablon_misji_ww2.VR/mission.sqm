@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1393;
+		nextID=1407;
 	};
 	class Camera
 	{
-		pos[]={4324.5444,155.78363,6454.5234};
-		dir[]={0.40179899,-0.19624518,0.89445263};
-		up[]={0.080414794,0.98055482,0.17901294};
-		aside[]={0.91219026,-7.4505806e-009,-0.40976694};
+		pos[]={4222.8945,9.3831892,4658.2402};
+		dir[]={0.67913425,-0.33604416,0.65260041};
+		up[]={0.24231246,0.94183755,0.23284462};
+		aside[]={0.69289649,2.0401785e-007,-0.72106791};
 	};
 };
 binarizationWanted=0;
@@ -310,7 +310,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=243;
+		items=234;
 		class Item0
 		{
 			dataType="Marker";
@@ -4684,108 +4684,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4090.189,5.0014391,6339.9009};
-						angles[]={0,6.2693272,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_A = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A_RTO";
-						description="Radioman@Anton";
-						isPlayable=1;
-					};
-					id=721;
-					type="B_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male08ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.94999999;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4095.189,5.0014391,6338.25};
 						angles[]={0,6.2693272,0};
 					};
@@ -4883,7 +4781,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4985,7 +4883,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5087,7 +4985,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5189,7 +5087,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5290,7 +5188,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5392,7 +5290,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5468,6 +5366,108 @@ class Mission
 										};
 									};
 									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4090.189,5.0014391,6339.9009};
+						angles[]={0,6.2693272,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_A = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A_RTO";
+						description="Radioman@Anton";
+						isPlayable=1;
+					};
+					id=1393;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
 								};
 							};
 						};
@@ -5715,108 +5715,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4113.3911,5.0014391,6338.689};
-						angles[]={0,6.2693272,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_B = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B_RTO";
-						description="Radioman@Berta";
-						isPlayable=1;
-					};
-					id=734;
-					type="B_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4118.3911,5.0014391,6337.0366};
 						angles[]={0,6.2693272,0};
 					};
@@ -5914,7 +5812,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6016,7 +5914,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6117,7 +6015,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6219,7 +6117,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6321,7 +6219,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6423,7 +6321,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6499,6 +6397,108 @@ class Mission
 										};
 									};
 									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4113.3911,5.0014391,6338.689};
+						angles[]={0,6.2693272,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_B = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B_RTO";
+						description="Radioman@Berta";
+						isPlayable=1;
+					};
+					id=1394;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
 								};
 							};
 						};
@@ -6746,108 +6746,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4137.4731,5.0014391,6335.4937};
-						angles[]={0,6.2693272,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_C = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C_RTO";
-						description="Radioman@Casar";
-						isPlayable=1;
-					};
-					id=747;
-					type="B_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4142.4731,5.0014391,6333.8428};
 						angles[]={0,6.2693272,0};
 					};
@@ -6945,7 +6843,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7047,7 +6945,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7148,7 +7046,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7250,7 +7148,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7352,7 +7250,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7454,7 +7352,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7530,6 +7428,108 @@ class Mission
 										};
 									};
 									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4137.4731,5.0014391,6335.4937};
+						angles[]={0,6.2693272,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpNATO_C = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C_RTO";
+						description="Radioman@Casar";
+						isPlayable=1;
+					};
+					id=1395;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
 								};
 							};
 						};
@@ -20694,108 +20694,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4050.7561,5.0014391,5486.4136};
-						angles[]={0,6.2774782,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpAAF_A = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitAAF_A_RTO";
-						description="Radioman@Able";
-						isPlayable=1;
-					};
-					id=940;
-					type="I_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male05GRE";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4055.7561,5.0014391,5484.7637};
 						angles[]={0,6.2774782,0};
 					};
@@ -20893,7 +20791,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -20995,7 +20893,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -21096,7 +20994,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -21198,7 +21096,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -21300,7 +21198,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -21401,7 +21299,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -21478,6 +21376,108 @@ class Mission
 										};
 									};
 									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4050.7561,5.0014391,5486.4136};
+						angles[]={0,6.2774782,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpAAF_A = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitAAF_A_RTO";
+						description="Radioman@Able";
+						isPlayable=1;
+					};
+					id=1396;
+					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
 								};
 							};
 						};
@@ -21725,108 +21725,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4081.5649,5.0014391,5484.8418};
-						angles[]={0,6.2774782,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpAAF_B = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitAAF_B_RTO";
-						description="Radioman@Baker";
-						isPlayable=1;
-					};
-					id=953;
-					type="I_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male06GRE";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4086.5649,5.0014391,5483.1919};
 						angles[]={0,6.2774782,0};
 					};
@@ -21924,7 +21822,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -22026,7 +21924,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -22127,7 +22025,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -22229,7 +22127,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -22331,7 +22229,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -22432,7 +22330,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -22509,6 +22407,108 @@ class Mission
 										};
 									};
 									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4081.5649,5.0014391,5484.8418};
+						angles[]={0,6.2774782,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpAAF_B = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitAAF_B_RTO";
+						description="Radioman@Baker";
+						isPlayable=1;
+					};
+					id=1397;
+					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
 								};
 							};
 						};
@@ -22756,108 +22756,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4112.5391,5.0014391,5483.209};
-						angles[]={0,6.2774782,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpAAF_C = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitAAF_C_RTO";
-						description="Radioman@Charlie";
-						isPlayable=1;
-					};
-					id=966;
-					type="I_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male06GRE";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.94999999;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={4117.5391,5.0014391,5481.5586};
 						angles[]={0,6.2774782,0};
 					};
@@ -22955,7 +22853,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -23057,7 +22955,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -23158,7 +23056,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -23260,7 +23158,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -23362,7 +23260,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -23463,7 +23361,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -23540,6 +23438,108 @@ class Mission
 										};
 									};
 									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4112.5391,5.0014391,5483.209};
+						angles[]={0,6.2774782,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpAAF_C = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitAAF_C_RTO";
+						description="Radioman@Charlie";
+						isPlayable=1;
+					};
+					id=1398;
+					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
 								};
 							};
 						};
@@ -35491,6 +35491,108 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
+						position[]={4122.4268,5.0014391,4711.3032};
+						angles[]={0,0.12875293,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="GrpCSAT_CO = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_CO_RTO";
+						description="RTO@Company HQ";
+						isPlayable=1;
+					};
+					id=1145;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
 						position[]={4127.4268,5.0014391,4708.564};
 						angles[]={0,0.12875293,0};
 					};
@@ -35499,13 +35601,13 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="call{GrpCSAT_CO = group this; [""uav"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_CO_UAV";
-						description="UAV@Company HQ";
+						init="call{GrpCSAT_CO = group this; [""engm"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_CO_ENG";
+						description="Mechanic@Company HQ";
 						isPlayable=1;
 					};
-					id=1144;
-					type="O_soldier_UAV_F";
+					id=1400;
+					type="O_soldier_repair_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35623,108 +35725,6 @@ class Mission
 							};
 						};
 						nAttributes=6;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4122.4268,5.0014391,4711.3032};
-						angles[]={0,0.12875293,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						init="GrpCSAT_CO = group this; [""rto"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_CO_RTO";
-						description="RTO@Company HQ";
-						isPlayable=1;
-					};
-					id=1145;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
 					};
 				};
 			};
@@ -36196,13 +36196,13 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=2;
+				items=10;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4050.728,5.0014391,4686.4424};
+						position[]={4050.728,5.0014391,4686.4429};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -36212,9 +36212,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_ASL_SL";
-						description="Squad Leader@Alpha Squad Lead";
+						init="GrpCSAT_A = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_SL";
+						description="Squad Leader@Anna";
 						isPlayable=1;
 					};
 					id=1152;
@@ -36305,7 +36305,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4055.781,5.0014391,4684.9624};
+						position[]={4055.781,5.0014391,4684.9629};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -36315,9 +36315,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_ASL = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_ASL_M";
-						description="Medic@Alpha Squad Lead";
+						init="GrpCSAT_A = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_M";
+						description="Medic@Anna";
 						isPlayable=1;
 					};
 					id=1153;
@@ -36403,128 +36403,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1151;
-		};
-		class Item201
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4050.9041,5.0014391,4681.4424};
-						angles[]={0,6.2400579,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						lock="UNLOCKED";
-						init="GrpCSAT_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_A1_FTL";
-						description="Team Leader@Alpha 1";
-						isPlayable=1;
-					};
-					id=1155;
-					type="O_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4055.957,5.0014391,4679.9634};
+						position[]={4055.957,5.0014391,4679.9639};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -36534,9 +36418,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_A1_AR";
-						description="Autorifleman@Alpha 1";
+						init="GrpCSAT_A = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_AR";
+						description="Autorifleman@Anna";
 						isPlayable=1;
 					};
 					id=1156;
@@ -36622,12 +36506,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4045.9619,5.0014391,4679.6221};
+						position[]={4045.9619,5.0014391,4679.6216};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -36637,9 +36521,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_A1_AAR";
-						description="Asst. Autorifleman@Alpha 1";
+						init="GrpCSAT_A = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_AAR";
+						description="Asst. Autorifleman@Anna";
 						isPlayable=1;
 					};
 					id=1157;
@@ -36725,7 +36609,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -36739,9 +36623,9 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="call{GrpCSAT_A1 = group this; [""dm"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_A1_DM";
-						description="Marksman@Alpha 1";
+						init="call{GrpCSAT_A = group this; [""dm"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_A_DM";
+						description="Marksman@Anna";
 						isPlayable=1;
 					};
 					id=1158;
@@ -36827,37 +36711,127 @@ class Mission
 						nAttributes=4;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1154;
-		};
-		class Item202
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4051.0371,5.0014391,4676.1943};
+						position[]={4050.9041,5.0014391,4681.4429};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
-					flags=6;
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_A2_FTL";
-						description="Team Leader@Alpha 2";
+						init="GrpCSAT_A = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_RTO";
+						description="RTO@Anna";
+						isPlayable=1;
+					};
+					id=1401;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4051.0371,5.0014391,4676.1948};
+						angles[]={0,6.2400579,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						lock="UNLOCKED";
+						init="GrpCSAT_A = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_FTL";
+						description="Team Leader@Anna";
 						isPlayable=1;
 					};
 					id=1160;
@@ -36943,12 +36917,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item1
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4056.0901,5.0014391,4674.7153};
+						position[]={4056.0901,5.0014391,4674.7158};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -36958,9 +36932,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_A2_AT_1";
-						description="Rifleman (AT)@Alpha 2";
+						init="GrpCSAT_A = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_AT_1";
+						description="Rifleman (AT)@Anna";
 						isPlayable=1;
 					};
 					id=1161;
@@ -37046,7 +37020,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -37061,9 +37035,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_A2_AT_2";
-						description="Rifleman (AT)@Alpha 2";
+						init="GrpCSAT_A = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_A_AT_2";
+						description="Rifleman (AT)@Anna";
 						isPlayable=1;
 					};
 					id=1162;
@@ -37149,7 +37123,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
@@ -37163,9 +37137,9 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="call{GrpCSAT_A2 = group this; [""gren"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_A2_GREN";
-						description="Grenadier@Alpha 2";
+						init="call{GrpCSAT_A = group this; [""gren"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_A_GREN";
+						description="Grenadier@Anna";
 						isPlayable=1;
 					};
 					id=1163;
@@ -37255,21 +37229,21 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1159;
+			id=1151;
 		};
-		class Item203
+		class Item201
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=2;
+				items=10;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4073.575,5.0014391,4685.8442};
+						position[]={4073.575,5.0014391,4685.8438};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -37279,9 +37253,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_BSL_SL";
-						description="Squad Leader@Bravo Squad Lead";
+						init="GrpCSAT_B = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_SL";
+						description="Squad Leader@Boris";
 						isPlayable=1;
 					};
 					id=1165;
@@ -37372,7 +37346,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4078.6279,5.0014391,4684.3652};
+						position[]={4078.6279,5.0014391,4684.3647};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -37382,9 +37356,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_BSL = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_BSL_M";
-						description="Medic@Bravo Squad Lead";
+						init="GrpCSAT_B = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_M";
+						description="Medic@Boris";
 						isPlayable=1;
 					};
 					id=1166;
@@ -37470,37 +37444,24 @@ class Mission
 						nAttributes=4;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1164;
-		};
-		class Item204
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4073.074,5.0014391,4681.2822};
+						position[]={4073.074,5.0014391,4681.2817};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
-					flags=6;
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_B1_FTL";
-						description="Team Leader@Bravo 1";
+						init="GrpCSAT_B = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_RTO";
+						description="RTO@Boris";
 						isPlayable=1;
 					};
 					id=1168;
@@ -37586,12 +37547,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item1
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4078.127,5.0014391,4679.8022};
+						position[]={4078.127,5.0014391,4679.8018};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -37601,9 +37562,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_B1_AR";
-						description="Autorifleman@Bravo 1";
+						init="GrpCSAT_B = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_AR";
+						description="Autorifleman@Boris";
 						isPlayable=1;
 					};
 					id=1169;
@@ -37689,12 +37650,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4068.1331,5.0014391,4679.4624};
+						position[]={4068.1331,5.0014391,4679.4629};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -37704,9 +37665,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_B1_AAR";
-						description="Asst. Autorifleman@Bravo 1";
+						init="GrpCSAT_B = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_AAR";
+						description="Asst. Autorifleman@Boris";
 						isPlayable=1;
 					};
 					id=1170;
@@ -37792,7 +37753,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -37806,9 +37767,9 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="call{GrpCSAT_B1 = group this; [""dm"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_B1_DM";
-						description="Marksman@Bravo 1";
+						init="call{GrpCSAT_B = group this; [""dm"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_B_DM";
+						description="Marksman@Boris";
 						isPlayable=1;
 					};
 					id=1171;
@@ -37894,20 +37855,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1167;
-		};
-		class Item205
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -37916,15 +37864,15 @@ class Mission
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
-					flags=6;
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_B2_FTL";
-						description="Team Leader@Bravo 2";
+						init="GrpCSAT_B = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_FTL";
+						description="Team Leader@Boris";
 						isPlayable=1;
 					};
 					id=1173;
@@ -38010,12 +37958,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item1
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4078.1787,5.0014391,4674.189};
+						position[]={4078.179,5.0014391,4674.189};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38025,9 +37973,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_B2_AT_1";
-						description="Rifleman (AT)@Bravo 2";
+						init="GrpCSAT_B = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_AT_1";
+						description="Rifleman (AT)@Boris";
 						isPlayable=1;
 					};
 					id=1174;
@@ -38113,12 +38061,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4068.1851,5.0014391,4673.8481};
+						position[]={4068.1851,5.0014391,4673.8477};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38128,9 +38076,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_B2_AT_2";
-						description="Rifleman (AT)@Bravo 2";
+						init="GrpCSAT_B = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_B_AT_2";
+						description="Rifleman (AT)@Boris";
 						isPlayable=1;
 					};
 					id=1175;
@@ -38216,12 +38164,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4083.27,5.0014391,4671.6211};
+						position[]={4083.27,5.0014391,4671.6206};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38230,9 +38178,9 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="call{GrpCSAT_B2 = group this; [""gren"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_B2_GREN";
-						description="Grenadier@Bravo 2";
+						init="call{GrpCSAT_B = group this; [""gren"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_B_GREN";
+						description="Grenadier@Boris";
 						isPlayable=1;
 					};
 					id=1176;
@@ -38322,21 +38270,21 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1172;
+			id=1164;
 		};
-		class Item206
+		class Item202
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=2;
+				items=10;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4095.8604,5.0014391,4684.187};
+						position[]={4095.8601,5.0014391,4684.187};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38346,9 +38294,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_CSL_SL";
-						description="Squad Leader@Charlie Squad Lead";
+						init="GrpCSAT_C = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_SL";
+						description="Squad Leader@Center";
 						isPlayable=1;
 					};
 					id=1178;
@@ -38449,9 +38397,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_CSL = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_CSL_M";
-						description="Medic@Charlie Squad Lead";
+						init="GrpCSAT_C = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_M";
+						description="Medic@Center";
 						isPlayable=1;
 					};
 					id=1179;
@@ -38537,37 +38485,24 @@ class Mission
 						nAttributes=4;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1177;
-		};
-		class Item207
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4095.835,5.0014391,4679.8442};
+						position[]={4095.835,5.0014391,4679.8438};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
-					flags=6;
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C1_FTL";
-						description="Team Leader@Charlie 1";
+						init="GrpCSAT_C = group this; [""rto"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_RTO";
+						description="Team Leader@Center";
 						isPlayable=1;
 					};
 					id=1181;
@@ -38653,12 +38588,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item1
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4100.8877,5.0014391,4678.3643};
+						position[]={4100.8882,5.0014391,4678.3638};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38668,9 +38603,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C1_AR";
-						description="Autorifleman@Charlie 1";
+						init="GrpCSAT_C = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_AR";
+						description="Autorifleman@Center";
 						isPlayable=1;
 					};
 					id=1182;
@@ -38756,12 +38691,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4090.894,5.0014391,4678.0244};
+						position[]={4090.894,5.0014391,4678.0249};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38771,9 +38706,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C1_AAR";
-						description="Asst. Autorifleman@Charlie 1";
+						init="GrpCSAT_C = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_AAR";
+						description="Asst. Autorifleman@Center";
 						isPlayable=1;
 					};
 					id=1183;
@@ -38859,12 +38794,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4105.978,5.0014391,4675.7974};
+						position[]={4105.978,5.0014391,4675.7979};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -38873,9 +38808,9 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="call{GrpCSAT_C1 = group this; [""dm"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_C1_DM";
-						description="Marksman@Charlie 1";
+						init="call{GrpCSAT_C = group this; [""dm"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_C_DM";
+						description="Marksman@Center";
 						isPlayable=1;
 					};
 					id=1184;
@@ -38961,37 +38896,24 @@ class Mission
 						nAttributes=4;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1180;
-		};
-		class Item208
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4096.4072,5.0014391,4674.9141};
+						position[]={4096.4072,5.0014391,4674.9136};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
-					flags=6;
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C2_FTL";
-						description="Team Leader@Charlie 2";
+						init="GrpCSAT_C = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_FTL";
+						description="Team Leader@Center";
 						isPlayable=1;
 					};
 					id=1186;
@@ -39077,12 +38999,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item1
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4101.46,5.0014391,4673.4351};
+						position[]={4101.46,5.0014391,4673.4346};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -39092,9 +39014,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C2_AT_1";
-						description="Rifleman (AT)@Charlie 2";
+						init="GrpCSAT_C = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_AT_1";
+						description="Rifleman (AT)@Center";
 						isPlayable=1;
 					};
 					id=1187;
@@ -39180,12 +39102,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4091.4658,5.0014391,4673.0952};
+						position[]={4091.4661,5.0014391,4673.0947};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -39195,9 +39117,9 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="GrpCSAT_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C2_AT_2";
-						description="Rifleman (AT)@Charlie 2";
+						init="GrpCSAT_C = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C_AT_2";
+						description="Rifleman (AT)@Center";
 						isPlayable=1;
 					};
 					id=1188;
@@ -39283,12 +39205,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4106.5508,5.0014391,4670.8672};
+						position[]={4106.5508,5.0014391,4670.8667};
 						angles[]={0,6.2400579,0};
 					};
 					side="East";
@@ -39297,9 +39219,9 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="call{GrpCSAT_C2 = group this; [""gren"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_C2_GREN";
-						description="Grenadier@Charlie 2";
+						init="call{GrpCSAT_C = group this; [""gren"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_C_GREN";
+						description="Grenadier@Center";
 						isPlayable=1;
 					};
 					id=1189;
@@ -39389,9 +39311,9 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1185;
+			id=1177;
 		};
-		class Item209
+		class Item203
 		{
 			dataType="Group";
 			side="East";
@@ -39848,7 +39770,7 @@ class Mission
 			};
 			id=1190;
 		};
-		class Item210
+		class Item204
 		{
 			dataType="Group";
 			side="East";
@@ -40067,7 +39989,7 @@ class Mission
 			};
 			id=1195;
 		};
-		class Item211
+		class Item205
 		{
 			dataType="Group";
 			side="East";
@@ -40694,7 +40616,7 @@ class Mission
 			};
 			id=1198;
 		};
-		class Item212
+		class Item206
 		{
 			dataType="Group";
 			side="East";
@@ -40910,7 +40832,7 @@ class Mission
 			};
 			id=1205;
 		};
-		class Item213
+		class Item207
 		{
 			dataType="Group";
 			side="East";
@@ -41129,7 +41051,7 @@ class Mission
 			};
 			id=1208;
 		};
-		class Item214
+		class Item208
 		{
 			dataType="Group";
 			side="East";
@@ -41756,7 +41678,7 @@ class Mission
 			};
 			id=1211;
 		};
-		class Item215
+		class Item209
 		{
 			dataType="Group";
 			side="East";
@@ -41972,7 +41894,7 @@ class Mission
 			};
 			id=1218;
 		};
-		class Item216
+		class Item210
 		{
 			dataType="Group";
 			side="East";
@@ -42191,7 +42113,7 @@ class Mission
 			};
 			id=1221;
 		};
-		class Item217
+		class Item211
 		{
 			dataType="Group";
 			side="East";
@@ -42818,7 +42740,7 @@ class Mission
 			};
 			id=1224;
 		};
-		class Item218
+		class Item212
 		{
 			dataType="Group";
 			side="East";
@@ -43034,7 +42956,7 @@ class Mission
 			};
 			id=1231;
 		};
-		class Item219
+		class Item213
 		{
 			dataType="Group";
 			side="East";
@@ -43046,7 +42968,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4223.0854,5.0014391,4710.645};
+						position[]={4223.606,5.0014391,4688.144};
 						angles[]={0,6.2740746,0};
 					};
 					side="East";
@@ -43056,431 +42978,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_MMG1 = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_MMG1_FTL";
-						description="Team Leader@MMG";
-						isPlayable=1;
-					};
-					id=1235;
-					type="O_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4228.0854,5.0014391,4708.9941};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpCSAT_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_MMG1_G";
-						description="Gunner@MMG";
-						isPlayable=1;
-					};
-					id=1236;
-					type="O_Soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4223.2583,5.0014391,4706.3853};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="call{GrpCSAT_MMG1 = group this; [""mmgab"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_MMG1_AB";
-						description="Ammo Bearer@MMG";
-						isPlayable=1;
-					};
-					id=1237;
-					type="O_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4218.0854,5.0014391,4708.9941};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpCSAT_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_MMG1_AG";
-						description="Assistant@MMG";
-						isPlayable=1;
-					};
-					id=1238;
-					type="O_Soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1234;
-		};
-		class Item220
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4223.6064,5.0014391,4688.144};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						init="GrpCSAT_HMG1 = group this; [""dc"",this] call f_fnc_assignGear;";
+						init="GrpCSAT_HMG1 = group this; [""rto"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_HMG1_FTL";
-						description="Team Leader@HMG";
+						description="Team Leader/RTO@HMG";
 						isPlayable=1;
 					};
 					id=1240;
@@ -43878,7 +43378,7 @@ class Mission
 			};
 			id=1239;
 		};
-		class Item221
+		class Item214
 		{
 			dataType="Group";
 			side="East";
@@ -43890,7 +43390,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4223.5342,5.0014391,4699.0103};
+						position[]={4223.5342,5.0014391,4699.0098};
 						angles[]={0,6.2740746,0};
 					};
 					side="East";
@@ -43900,9 +43400,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_MAT1 = group this; [""dc"",this] call f_fnc_assignGear;";
+						init="GrpCSAT_MAT1 = group this; [""rto"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_MAT1_FTL";
-						description="Team Leader@MAT";
+						description="Team Leader/RTO@MAT";
 						isPlayable=1;
 					};
 					id=1245;
@@ -44300,429 +43800,7 @@ class Mission
 			};
 			id=1244;
 		};
-		class Item222
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4223.7412,5.0014391,4678.0278};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						init="GrpCSAT_HAT1 = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_HAT1_FTL";
-						description="Team Leader@HAT";
-						isPlayable=1;
-					};
-					id=1250;
-					type="O_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4228.7412,5.0014391,4676.3779};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="call{GrpCSAT_HAT1 = group this; [""hatg"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_HAT1_G";
-						description="Gunner@HAT";
-						isPlayable=1;
-					};
-					id=1251;
-					type="O_Soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4218.7412,5.0014391,4676.3779};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpCSAT_HAT1 = group this; [""hatag"",this] call f_fnc_assignGear; ";
-						name="UnitCSAT_HAT1_AG";
-						description="Assistant@HAT";
-						isPlayable=1;
-					};
-					id=1252;
-					type="O_Soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4223.7407,5.0014391,4673.8433};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="call{GrpCSAT_HAT1 = group this; [""hatab"",this] call f_fnc_assignGear; }";
-						name="UnitCSAT_HAT1_AB";
-						description="Ammo Bearer@HAT";
-						isPlayable=1;
-					};
-					id=1253;
-					type="O_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1249;
-		};
-		class Item223
+		class Item215
 		{
 			dataType="Group";
 			side="East";
@@ -44744,9 +43822,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="GrpCSAT_MTR1 = group this; [""dc"",this] call f_fnc_assignGear;";
+						init="GrpCSAT_MTR1 = group this; [""rto"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_MTR1_FTL";
-						description="Team Leader@MTR";
+						description="Team Leader/RTO@MTR";
 						isPlayable=1;
 					};
 					id=1255;
@@ -45144,7 +44222,7 @@ class Mission
 			};
 			id=1254;
 		};
-		class Item224
+		class Item216
 		{
 			dataType="Group";
 			side="East";
@@ -45156,7 +44234,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4223.9814,5.0014391,4656.7148};
+						position[]={4223.981,5.0014391,4656.7148};
 						angles[]={0,6.2740746,0};
 					};
 					side="East";
@@ -45166,9 +44244,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="call{GrpCSAT_GMG = group this; [""dc"",this] call f_fnc_assignGear;}";
+						init="call{GrpCSAT_GMG = group this; [""rto"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_GMG_FTL";
-						description="Team Leader@GMG";
+						description="Team Leader/RTO@GMG";
 						isPlayable=1;
 					};
 					id=1260;
@@ -45566,7 +44644,7 @@ class Mission
 			};
 			id=1259;
 		};
-		class Item225
+		class Item217
 		{
 			dataType="Group";
 			side="East";
@@ -45574,531 +44652,6 @@ class Mission
 			{
 				items=4;
 				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4224.2969,5.0014391,4648.0176};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						init="GrpCSAT_MSAM1 = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_MSAM1_FTL";
-						description="Team Leader@SAM";
-						isPlayable=1;
-					};
-					id=1265;
-					type="O_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4229.2959,5.0014391,4646.3667};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpCSAT_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_MSAM1_G";
-						description="Gunner@SAM";
-						isPlayable=1;
-					};
-					id=1266;
-					type="O_Soldier_AA_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4219.2969,5.0014391,4646.3667};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpCSAT_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
-						name="UnitCSAT_MSAM1_AG";
-						description="Assistant@SAM";
-						isPlayable=1;
-					};
-					id=1267;
-					type="O_Soldier_AAA_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4224.2524,5.0014391,4644.7856};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="call{GrpCSAT_MSAM1 = group this; [""msamab"",this] call f_fnc_assignGear; }";
-						name="UnitCSAT_MSAM1_AB";
-						description="Ammo Bearer@SAM";
-						isPlayable=1;
-					};
-					id=1268;
-					type="O_Soldier_AAA_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1264;
-		};
-		class Item226
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4224.3076,5.0014391,4639.2344};
-						angles[]={0,6.2740746,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						init="call{GrpCSAT_MC = group this; [""dc"",this] call f_fnc_assignGear;}";
-						name="UnitCSAT_MC_FTL";
-						description="Team Leader@Medical Core";
-						isPlayable=1;
-					};
-					id=1270;
-					type="O_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -46200,7 +44753,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item2
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -46302,7 +44855,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
@@ -46404,13 +44957,116 @@ class Mission
 						nAttributes=4;
 					};
 				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4224.3081,5.0014391,4639.2349};
+						angles[]={0,6.2740746,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						lock="UNLOCKED";
+						init="call{GrpCSAT_MC = group this; [""doc"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_MC_FTL";
+						description="Medic@Medical Core";
+						isPlayable=1;
+					};
+					id=1406;
+					type="O_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull, [_this], true] call grad_captiveWalking_functions_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
 			};
 			class Attributes
 			{
 			};
 			id=1269;
 		};
-		class Item227
+		class Item218
 		{
 			dataType="Group";
 			side="East";
@@ -46422,7 +45078,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4224.5747,5.0014391,4628.7324};
+						position[]={4224.5752,5.0014391,4628.7329};
 						angles[]={0,6.2740746,0};
 					};
 					side="East";
@@ -46432,9 +45088,9 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						init="call{GrpCSAT_EOD = group this; [""dc"",this] call f_fnc_assignGear;}";
+						init="call{GrpCSAT_EOD = group this; [""rto"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_EOD_FTL";
-						description="Team Leader@EOD";
+						description="Team Leader/RTO@EOD";
 						isPlayable=1;
 					};
 					id=1275;
@@ -46627,7 +45283,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4224.5308,5.0014391,4625.5005};
+						position[]={4224.5308,5.0014391,4625.501};
 						angles[]={0,6.2740746,0};
 					};
 					side="East";
@@ -46636,9 +45292,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="call{Grpcsat_EOD = group this; [""enguav"",this] call f_fnc_assignGear;}";
+						init="call{Grpcsat_EOD = group this; [""engm"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_EOD_UAV";
-						description="EOD UAV@SAM";
+						description="Saper@EOD";
 						isPlayable=1;
 					};
 					id=1277;
@@ -46729,7 +45385,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4229.5737,5.0014391,4627.0815};
+						position[]={4229.5742,5.0014391,4627.082};
 						angles[]={0,6.2740746,0};
 					};
 					side="East";
@@ -46832,7 +45488,7 @@ class Mission
 			};
 			id=1274;
 		};
-		class Item228
+		class Item219
 		{
 			dataType="Group";
 			side="East";
@@ -47253,7 +45909,7 @@ class Mission
 			};
 			id=1279;
 		};
-		class Item229
+		class Item220
 		{
 			dataType="Group";
 			side="East";
@@ -47674,7 +46330,7 @@ class Mission
 			};
 			id=1284;
 		};
-		class Item230
+		class Item221
 		{
 			dataType="Group";
 			side="East";
@@ -47992,7 +46648,7 @@ class Mission
 			};
 			id=1289;
 		};
-		class Item231
+		class Item222
 		{
 			dataType="Group";
 			side="East";
@@ -48310,7 +46966,7 @@ class Mission
 			};
 			id=1293;
 		};
-		class Item232
+		class Item223
 		{
 			dataType="Group";
 			side="East";
@@ -48628,7 +47284,7 @@ class Mission
 			};
 			id=1297;
 		};
-		class Item233
+		class Item224
 		{
 			dataType="Group";
 			side="East";
@@ -48845,7 +47501,7 @@ class Mission
 			};
 			id=1301;
 		};
-		class Item234
+		class Item225
 		{
 			dataType="Group";
 			side="East";
@@ -49062,7 +47718,7 @@ class Mission
 			};
 			id=1304;
 		};
-		class Item235
+		class Item226
 		{
 			dataType="Group";
 			side="East";
@@ -49279,7 +47935,7 @@ class Mission
 			};
 			id=1307;
 		};
-		class Item236
+		class Item227
 		{
 			dataType="Group";
 			side="East";
@@ -49496,7 +48152,7 @@ class Mission
 			};
 			id=1310;
 		};
-		class Item237
+		class Item228
 		{
 			dataType="Group";
 			side="East";
@@ -49814,7 +48470,7 @@ class Mission
 			};
 			id=1316;
 		};
-		class Item238
+		class Item229
 		{
 			dataType="Group";
 			side="East";
@@ -50132,7 +48788,7 @@ class Mission
 			};
 			id=1320;
 		};
-		class Item239
+		class Item230
 		{
 			dataType="Group";
 			side="East";
@@ -50450,7 +49106,7 @@ class Mission
 			};
 			id=1324;
 		};
-		class Item240
+		class Item231
 		{
 			dataType="Group";
 			side="East";
@@ -51150,7 +49806,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item241
+		class Item232
 		{
 			dataType="Group";
 			side="East";
@@ -52403,7 +51059,7 @@ class Mission
 			};
 			id=1335;
 		};
-		class Item242
+		class Item233
 		{
 			dataType="Object";
 			class PositionInfo
